@@ -8,9 +8,9 @@ target 'Architecture' do
   use_frameworks!
 
   # Pods for Architecture
-#  pod 'Alamofire'
-#  pod 'Cache'
-#  pod 'MBProgressHUD'
+  pod 'Alamofire'
+  pod 'Cache'
+  pod 'MBProgressHUD'
   
   target 'ArchitectureTests' do
     inherit! :search_paths
