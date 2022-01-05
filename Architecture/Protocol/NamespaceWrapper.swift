@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// 类型协议
 protocol TypeWrapperProtocol {
@@ -37,6 +38,10 @@ extension NamespaceWrappable {
         return NamespaceWrapper.self
     }
 }
+
+
+extension UIColor: NamespaceWrappable {}
+extension UIFont: NamespaceWrappable {}
 
 //使用示例
 //extension UIColor: NamespaceWrappable {}

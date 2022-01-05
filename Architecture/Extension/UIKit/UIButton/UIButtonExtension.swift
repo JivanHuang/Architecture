@@ -116,7 +116,6 @@ public extension UIButton {
 
 // MARK: UIButton 图片 与 title 位置关系
 
-/// UIButton 图片与title位置关系 https://www.jianshu.com/p/0f34c1b52604
 public extension UIButton {
     /// 图片 和 title 的布局样式
     enum ImageTitleLayout {

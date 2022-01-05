@@ -268,8 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				8CDE160526CF498600AE8BC2 /* Theme */,
-				8C4086CF26CE272C00C26A55 /* QuartzCore */,
 				8C40868126CE06C200C26A55 /* CoreGraphics */,
+				8C4086CF26CE272C00C26A55 /* QuartzCore */,
 				8C40866A26CDEF9800C26A55 /* UIKit */,
 				8C40866926CDEF8400C26A55 /* Foundation */,
 			);
