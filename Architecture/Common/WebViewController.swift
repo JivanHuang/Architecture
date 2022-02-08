@@ -52,14 +52,13 @@ class WebViewController: ViewController {
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
         webView.addObserver(self, forKeyPath: "title", options: .new, context: nil)
         webView.uiDelegate = self
-        //  Swift 调用 JavaScript 方法
+        // Swift 调用 JavaScript 方法
 
         // 字体大小适配
         let textJS = "var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);"
         webView.evaluateJavaScript(textJS, completionHandler: nil)
 
         // JavaScript 调用 Swift 方法
-
         webView.configuration.userContentController.add(WeakScriptMessageDelegate(self), name: "")
 
         if url != nil {

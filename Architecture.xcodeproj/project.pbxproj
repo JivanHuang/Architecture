@@ -56,7 +56,6 @@
 		8C4086DA26CE3FCE00C26A55 /* NetworkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D326CE3FCE00C26A55 /* NetworkLog.swift */; };
 		8C4086DB26CE3FCE00C26A55 /* NetWorkValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D426CE3FCE00C26A55 /* NetWorkValue.swift */; };
 		8C4086DC26CE3FCE00C26A55 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D526CE3FCE00C26A55 /* NetWork.swift */; };
-		8C4086DD26CE3FCE00C26A55 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D626CE3FCE00C26A55 /* DownloadManager.swift */; };
 		8C4086DE26CE3FCE00C26A55 /* CacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D726CE3FCE00C26A55 /* CacheKey.swift */; };
 		8C4086E126CE5C7800C26A55 /* BackWebviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086DF26CE5C7800C26A55 /* BackWebviewController.swift */; };
 		8C4086E226CE5C7800C26A55 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086E026CE5C7800C26A55 /* WebViewController.swift */; };
@@ -144,7 +143,6 @@
 		8C4086D326CE3FCE00C26A55 /* NetworkLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLog.swift; sourceTree = "<group>"; };
 		8C4086D426CE3FCE00C26A55 /* NetWorkValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkValue.swift; sourceTree = "<group>"; };
 		8C4086D526CE3FCE00C26A55 /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
-		8C4086D626CE3FCE00C26A55 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		8C4086D726CE3FCE00C26A55 /* CacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheKey.swift; sourceTree = "<group>"; };
 		8C4086DF26CE5C7800C26A55 /* BackWebviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackWebviewController.swift; sourceTree = "<group>"; };
 		8C4086E026CE5C7800C26A55 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -594,7 +592,6 @@
 				8C4086D326CE3FCE00C26A55 /* NetworkLog.swift */,
 				8C4086D526CE3FCE00C26A55 /* NetWork.swift */,
 				8C4086D426CE3FCE00C26A55 /* NetWorkValue.swift */,
-				8C4086D626CE3FCE00C26A55 /* DownloadManager.swift */,
 				8C4086D126CE3FCE00C26A55 /* RequestManager.swift */,
 			);
 			path = NetWork;
@@ -937,7 +934,6 @@
 				8C40867726CDF89800C26A55 /* UIImageExtension.swift in Sources */,
 				8C40868A26CE06C200C26A55 /* CGFloatLiteral.swift in Sources */,
 				8C40869626CE1CF800C26A55 /* UIAlertControllerExtension.swift in Sources */,
-				8C4086DD26CE3FCE00C26A55 /* DownloadManager.swift in Sources */,
 				8C40861E26CD003300C26A55 /* AppDelegate.swift in Sources */,
 				8C40867D26CDFF5800C26A55 /* UIApplicationExtension.swift in Sources */,
 				8C4086B626CE1DF200C26A55 /* AnyOptional.swift in Sources */,
