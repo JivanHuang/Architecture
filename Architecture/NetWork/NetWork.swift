@@ -15,16 +15,12 @@ public enum NetWork {
     public static var openUrlLog: Bool = false
     /// 开启/关闭结果log
     public static var openResultLog: Bool = false
-
     /// 缓存过期时间
-    /// - Parameter expiry: 参考 NetExpiry
     public static func cacheExpiryConfig(expiry: NetExpiry) {
         CacheManager.default.expiryConfiguration(expiry: expiry)
     }
 
     /// 超时时间
-    ///
-    /// - Parameter timeInterval: 超时时间
     public static func timeoutIntervalForRequest(_ timeInterval: TimeInterval) {
         RequestManager.default.timeoutIntervalForRequest(timeInterval)
     }

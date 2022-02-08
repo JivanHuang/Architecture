@@ -1,12 +1,12 @@
 //
-//  SwiftBaseProjectTests.swift
-//  SwiftBaseProjectTests
+//  ArchitectureTests.swift
+//  ArchitectureTests
 //
 //  Created by Jivan on 2021/8/18.
 //
 
 import XCTest
-@testable import SwiftBaseProject
+@testable import Architecture
 
 class SwiftBaseProjectTests: XCTestCase {
 
