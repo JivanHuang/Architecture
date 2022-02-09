@@ -1,6 +1,5 @@
 //
 //  CacheManager.swift
-//  Jivan
 //
 //  Created by Jivan on 2017/10/17.
 //  Copyright © 2017年 Jivan. All rights reserved.
