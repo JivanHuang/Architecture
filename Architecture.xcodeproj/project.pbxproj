@@ -239,15 +239,15 @@
 			isa = PBXGroup;
 			children = (
 				8C40861D26CD003300C26A55 /* AppDelegate.swift */,
-				8C40862626CD003700C26A55 /* Assets.xcassets */,
 				8C40864D26CD00F100C26A55 /* Common */,
 				8C40865026CD012200C26A55 /* Constant */,
+				8C40864F26CD010800C26A55 /* Extension */,
+				8C40862B26CD003700C26A55 /* Info.plist */,
+				8C40862626CD003700C26A55 /* Assets.xcassets */,
+				8C40862826CD003700C26A55 /* LaunchScreen.storyboard */,
 				8C8D03D427B3A08700FD9150 /* Net */,
 				8C4086AF26CE1DF200C26A55 /* Protocol */,
 				8CECE49F26DC772500763B12 /* Tools */,
-				8C40864F26CD010800C26A55 /* Extension */,
-				8C40862B26CD003700C26A55 /* Info.plist */,
-				8C40862826CD003700C26A55 /* LaunchScreen.storyboard */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -1149,7 +1149,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = D2UTZHZY7D;
 				INFOPLIST_FILE = Architecture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1158,6 +1160,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.07072.Architecture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 07072WildcardDev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1169,7 +1172,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = D2UTZHZY7D;
 				INFOPLIST_FILE = Architecture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1178,6 +1183,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.07072.Architecture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 07072WildcardDev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

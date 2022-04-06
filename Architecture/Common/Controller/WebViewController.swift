@@ -55,7 +55,7 @@ class WebViewController: ViewController {
         // Swift 调用 JavaScript 方法
 
         // 字体大小适配
-        let textJS = "var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);"
+        let textJS = ""
         webView.evaluateJavaScript(textJS, completionHandler: nil)
 
         // JavaScript 调用 Swift 方法
@@ -170,6 +170,19 @@ extension WebViewController: WKUIDelegate {
 
         alert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: { _ in
             completionHandler(false)
+        }))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
+        
+        let alert = UIAlertController(title: prompt, message: defaultText, preferredStyle: .alert)
+        
+        alert.addTextField { (textField: UITextField) -> Void in
+            textField.textColor = UIColor.red
+        }
+        alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { (_) -> Void in
+            completionHandler(alert.textFields![0].text!)
         }))
         present(alert, animated: true, completion: nil)
     }
