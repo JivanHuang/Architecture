@@ -130,7 +130,7 @@ class WebViewController: ViewController {
     }
 
     open func loadRequest() {
-        if let url = self.url {
+        if let url = url {
             let request = NSMutableURLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 20)
             webView.load(request as URLRequest)
         }
@@ -173,15 +173,14 @@ extension WebViewController: WKUIDelegate {
         }))
         present(alert, animated: true, completion: nil)
     }
-    
+
     func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
-        
         let alert = UIAlertController(title: prompt, message: defaultText, preferredStyle: .alert)
-        
-        alert.addTextField { (textField: UITextField) -> Void in
+
+        alert.addTextField { (textField: UITextField) in
             textField.textColor = UIColor.red
         }
-        alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { (_) -> Void in
+        alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { _ in
             completionHandler(alert.textFields![0].text!)
         }))
         present(alert, animated: true, completion: nil)

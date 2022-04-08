@@ -17,7 +17,7 @@ class TabBarController: UITabBarController {
 extension TabBarController {
     func setupChildControllers() {
         let informationNav = configureChilds(controller: ViewController(),
-                                             title: "资讯",
+                                             title: "首页",
                                              imageName: "tabbar_information")
 
         let authorityNav = configureChilds(controller: ViewController(),

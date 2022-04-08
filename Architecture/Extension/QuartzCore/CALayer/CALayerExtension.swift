@@ -330,7 +330,7 @@ public extension CALayer {
     }
 }
 
-// MARK: 有关 CASpringAnimation 弹簧动画的扩展
+// MARK: 有关 CASpringAnimation 弹性动画的扩展
 
 public extension CALayer {
     /// 弹簧动画：Bounds 动画
