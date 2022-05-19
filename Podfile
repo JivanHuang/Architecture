@@ -10,7 +10,6 @@ target 'Architecture' do
   # Pods for Architecture
   pod 'Alamofire'
   pod 'Cache'
-  pod 'MBProgressHUD'
   
   target 'ArchitectureTests' do
     inherit! :search_paths

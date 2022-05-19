@@ -30,8 +30,6 @@
 		8C8D03D027B3984300FD9150 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CC27B3984300FD9150 /* NetworkConfig.swift */; };
 		8C8D03D127B3984300FD9150 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CD27B3984300FD9150 /* DataTransferService.swift */; };
 		8C8D03D227B3984300FD9150 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CE27B3984300FD9150 /* NetworkService.swift */; };
-		8CECE4A126DC776200763B12 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CECE4A026DC776200763B12 /* HUD.swift */; };
-		8CECE4A426DC77EC00763B12 /* HUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CECE4A326DC77EC00763B12 /* HUD.bundle */; };
 		B3E62B9BB5820BD9B5967867 /* Pods_Architecture_ArchitectureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBED850C9B9922AD53DE50FB /* Pods_Architecture_ArchitectureUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,8 +83,6 @@
 		8C8D03CC27B3984300FD9150 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		8C8D03CD27B3984300FD9150 /* DataTransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
 		8C8D03CE27B3984300FD9150 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		8CECE4A026DC776200763B12 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
-		8CECE4A326DC77EC00763B12 /* HUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HUD.bundle; sourceTree = "<group>"; };
 		BE2F0AD33EAFE8F2A2673369 /* Pods-ArchitectureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureTests.debug.xcconfig"; path = "Target Support Files/Pods-ArchitectureTests/Pods-ArchitectureTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4D51C45947C11C4021AA5CB /* Pods-Architecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture.debug.xcconfig"; path = "Target Support Files/Pods-Architecture/Pods-Architecture.debug.xcconfig"; sourceTree = "<group>"; };
 		CE5CF12118179EB516553528 /* Pods_Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,12 +156,11 @@
 			children = (
 				8C40861D26CD003300C26A55 /* AppDelegate.swift */,
 				8C40864D26CD00F100C26A55 /* Common */,
+				8C8D03D427B3A08700FD9150 /* Net */,
+				8C4086AF26CE1DF200C26A55 /* Protocol */,
 				8C40862B26CD003700C26A55 /* Info.plist */,
 				8C40862626CD003700C26A55 /* Assets.xcassets */,
 				8C40862826CD003700C26A55 /* LaunchScreen.storyboard */,
-				8C8D03D427B3A08700FD9150 /* Net */,
-				8C4086AF26CE1DF200C26A55 /* Protocol */,
-				8CECE49F26DC772500763B12 /* Tools */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -235,23 +230,6 @@
 				8C4086D026CE3FCE00C26A55 /* NetWork */,
 			);
 			path = Net;
-			sourceTree = "<group>";
-		};
-		8CECE49F26DC772500763B12 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				8CECE4A226DC77CE00763B12 /* HUD */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		8CECE4A226DC77CE00763B12 /* HUD */ = {
-			isa = PBXGroup;
-			children = (
-				8CECE4A326DC77EC00763B12 /* HUD.bundle */,
-				8CECE4A026DC776200763B12 /* HUD.swift */,
-			);
-			path = HUD;
 			sourceTree = "<group>";
 		};
 		F23C4A74073CE5A1FA89C118 /* Pods */ = {
@@ -386,7 +364,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C40862A26CD003700C26A55 /* LaunchScreen.storyboard in Resources */,
-				8CECE4A426DC77EC00763B12 /* HUD.bundle in Resources */,
 				8C40862726CD003700C26A55 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,7 +508,6 @@
 				8C8D03D227B3984300FD9150 /* NetworkService.swift in Sources */,
 				8C76C21227588A75008ED8D2 /* NamespaceWrapper.swift in Sources */,
 				8C40861E26CD003300C26A55 /* AppDelegate.swift in Sources */,
-				8CECE4A126DC776200763B12 /* HUD.swift in Sources */,
 				8C8D03CF27B3984300FD9150 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
