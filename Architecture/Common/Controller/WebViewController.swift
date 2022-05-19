@@ -73,7 +73,7 @@ class WebViewController: ViewController {
         super.viewDidLayoutSubviews()
         webView.frame = view.bounds
         if url != nil {
-            progressView.frame = CGRect(x: 0, y: 0 - webView.scrollView.bounds.origin.y, width: webView.bounds.size.width, height: kOnexPixel)
+            progressView.frame = CGRect(x: 0, y: 0 - webView.scrollView.bounds.origin.y, width: webView.bounds.size.width, height: 1.0)
             progressView.progressTintColor = .blue
         }
     }
