@@ -17,9 +17,6 @@
 		8C40865726CD037600C26A55 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40865626CD037600C26A55 /* TabBarController.swift */; };
 		8C40865926CD039A00C26A55 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40865826CD039A00C26A55 /* NavigationController.swift */; };
 		8C40865B26CD03AB00C26A55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40865A26CD03AB00C26A55 /* ViewController.swift */; };
-		8C4086B426CE1DF200C26A55 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086B026CE1DF200C26A55 /* Then.swift */; };
-		8C4086B626CE1DF200C26A55 /* AnyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086B226CE1DF200C26A55 /* AnyOptional.swift */; };
-		8C4086B726CE1DF200C26A55 /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086B326CE1DF200C26A55 /* Occupiable.swift */; };
 		8C4086D826CE3FCE00C26A55 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D126CE3FCE00C26A55 /* RequestManager.swift */; };
 		8C4086D926CE3FCE00C26A55 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D226CE3FCE00C26A55 /* CacheManager.swift */; };
 		8C4086DA26CE3FCE00C26A55 /* NetworkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D326CE3FCE00C26A55 /* NetworkLog.swift */; };
@@ -75,9 +72,6 @@
 		8C40865626CD037600C26A55 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8C40865826CD039A00C26A55 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		8C40865A26CD03AB00C26A55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8C4086B026CE1DF200C26A55 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
-		8C4086B226CE1DF200C26A55 /* AnyOptional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOptional.swift; sourceTree = "<group>"; };
-		8C4086B326CE1DF200C26A55 /* Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Occupiable.swift; sourceTree = "<group>"; };
 		8C4086D126CE3FCE00C26A55 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		8C4086D226CE3FCE00C26A55 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		8C4086D326CE3FCE00C26A55 /* NetworkLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLog.swift; sourceTree = "<group>"; };
@@ -206,9 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				8C76C21127588A75008ED8D2 /* NamespaceWrapper.swift */,
-				8C4086B226CE1DF200C26A55 /* AnyOptional.swift */,
-				8C4086B326CE1DF200C26A55 /* Occupiable.swift */,
-				8C4086B026CE1DF200C26A55 /* Then.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -524,11 +515,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C4086B426CE1DF200C26A55 /* Then.swift in Sources */,
 				8C8D03D027B3984300FD9150 /* NetworkConfig.swift in Sources */,
 				8C4086DC26CE3FCE00C26A55 /* NetWork.swift in Sources */,
 				8C4086DB26CE3FCE00C26A55 /* NetWorkValue.swift in Sources */,
-				8C4086B726CE1DF200C26A55 /* Occupiable.swift in Sources */,
 				8C4086E126CE5C7800C26A55 /* BackWebviewController.swift in Sources */,
 				8C4086DE26CE3FCE00C26A55 /* CacheKey.swift in Sources */,
 				8C40865926CD039A00C26A55 /* NavigationController.swift in Sources */,
@@ -542,7 +531,6 @@
 				8C8D03D227B3984300FD9150 /* NetworkService.swift in Sources */,
 				8C76C21227588A75008ED8D2 /* NamespaceWrapper.swift in Sources */,
 				8C40861E26CD003300C26A55 /* AppDelegate.swift in Sources */,
-				8C4086B626CE1DF200C26A55 /* AnyOptional.swift in Sources */,
 				8CECE4A126DC776200763B12 /* HUD.swift in Sources */,
 				8C8D03CF27B3984300FD9150 /* Endpoint.swift in Sources */,
 			);
