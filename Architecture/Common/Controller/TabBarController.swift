@@ -7,6 +7,8 @@
 
 import UIKit
 
+private typealias Tuple = (viewController: ViewController, title: String?, image: UIImage?, selectedImage: UIImage?)
+
 class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,12 +20,19 @@ class TabBarController: UITabBarController {
 
 private extension TabBarController {
     func setupChildControllers() {
-        let home = configNavigationController(viewController: ViewController(), title: "Home", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
+        let home: Tuple = (ViewController(), "Home", UIImage(systemName: "house"), UIImage(systemName: "house.fill"))
 
-        let location = configNavigationController(viewController: ViewController(), title: "Location", image: UIImage(systemName: "location"), selectedImage: UIImage(systemName: "location.fill"))
+        let location = (ViewController(), "Location", UIImage(systemName: "location"), UIImage(systemName: "location.fill"))
 
-        let person = configNavigationController(viewController: ViewController(), title: "Person", image: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person.fill"))
-        viewControllers = [home, location, person]
+        let person = (ViewController(), "Person", UIImage(systemName: "person"), UIImage(systemName: "person.fill"))
+
+        let controllers = [home, location, person]
+
+        controllers.forEach { viewController, title, image, selectedImage in
+
+            let nav = configNavigationController(viewController: viewController, title: title, image: image, selectedImage: selectedImage)
+            addChild(nav)
+        }
     }
 
     func configNavigationController(viewController: ViewController, title: String?, image: UIImage?, selectedImage: UIImage?) -> NavigationController
