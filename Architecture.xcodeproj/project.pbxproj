@@ -327,10 +327,10 @@
 			isa = PBXGroup;
 			children = (
 				8CEDA7A128362A2C004BC3AC /* EmailValidator.swift */,
-				8CEDA7A228362A2C004BC3AC /* PhoneNumberValidator.swift */,
-				8CEDA7A328362A2C004BC3AC /* Validator.swift */,
 				8CEDA7A428362A2C004BC3AC /* IDCardValidator.swift */,
 				8CEDA7A528362A2C004BC3AC /* IPAddressValidator.swift */,
+				8CEDA7A228362A2C004BC3AC /* PhoneNumberValidator.swift */,
+				8CEDA7A328362A2C004BC3AC /* Validator.swift */,
 			);
 			path = Validator;
 			sourceTree = "<group>";

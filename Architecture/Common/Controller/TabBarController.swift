@@ -12,8 +12,6 @@ private typealias Tuple = (viewController: ViewController, title: String?, image
 class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         setupChildControllers()
     }
 }
@@ -22,11 +20,11 @@ private extension TabBarController {
     func setupChildControllers() {
         let home: Tuple = (ViewController(), "Home", UIImage(systemName: "house"), UIImage(systemName: "house.fill"))
 
-        let location = (ViewController(), "Location", UIImage(systemName: "location"), UIImage(systemName: "location.fill"))
+        let square = (ViewController(), "Square", UIImage(systemName: "heart.text.square"), UIImage(systemName: "heart.text.square.fill"))
 
         let person = (ViewController(), "Person", UIImage(systemName: "person"), UIImage(systemName: "person.fill"))
 
-        let controllers = [home, location, person]
+        let controllers = [home, square, person]
 
         controllers.forEach { viewController, title, image, selectedImage in
 
