@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		45B61A93448E7A7ADB4D974C /* Pods_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5CF12118179EB516553528 /* Pods_Architecture.framework */; };
 		86EA86CA54275E4D9458F2B8 /* Pods_ArchitectureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331F87846DB28FB3081BB356 /* Pods_ArchitectureTests.framework */; };
+		8C2B813B283B3155001D35C4 /* MD5StringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B813A283B3155001D35C4 /* MD5StringEncoder.swift */; };
 		8C40861E26CD003300C26A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40861D26CD003300C26A55 /* AppDelegate.swift */; };
 		8C40862726CD003700C26A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C40862626CD003700C26A55 /* Assets.xcassets */; };
 		8C40862A26CD003700C26A55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C40862826CD003700C26A55 /* LaunchScreen.storyboard */; };
@@ -95,6 +96,7 @@
 		331F87846DB28FB3081BB356 /* Pods_ArchitectureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArchitectureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7176178609C383134D9D2247 /* Pods-Architecture-ArchitectureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture-ArchitectureUITests.release.xcconfig"; path = "Target Support Files/Pods-Architecture-ArchitectureUITests/Pods-Architecture-ArchitectureUITests.release.xcconfig"; sourceTree = "<group>"; };
 		75A92A49EF96754FC39951D8 /* Pods-Architecture-ArchitectureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture-ArchitectureUITests.debug.xcconfig"; path = "Target Support Files/Pods-Architecture-ArchitectureUITests/Pods-Architecture-ArchitectureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C2B813A283B3155001D35C4 /* MD5StringEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5StringEncoder.swift; sourceTree = "<group>"; };
 		8C40861A26CD003300C26A55 /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C40861D26CD003300C26A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C40862626CD003700C26A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -615,6 +617,7 @@
 		8CEDA7E528362A2C004BC3AC /* StringCoder */ = {
 			isa = PBXGroup;
 			children = (
+				8C2B813A283B3155001D35C4 /* MD5StringEncoder.swift */,
 				8CEDA7E628362A2C004BC3AC /* Base64StringCoder.swift */,
 				8CEDA7E728362A2C004BC3AC /* StringCoder.swift */,
 			);
@@ -905,6 +908,7 @@
 				8C4086E226CE5C7800C26A55 /* WebViewController.swift in Sources */,
 				8CEDA80928362A2C004BC3AC /* String+Transform.swift in Sources */,
 				8CEDA80728362A2C004BC3AC /* Double+Transform.swift in Sources */,
+				8C2B813B283B3155001D35C4 /* MD5StringEncoder.swift in Sources */,
 				8CEDA80328362A2C004BC3AC /* URL+Query.swift in Sources */,
 				8CEDA7F128362A2C004BC3AC /* UILabel+Chain.swift in Sources */,
 				8CEDA80D28362A2C004BC3AC /* Base64StringCoder.swift in Sources */,
