@@ -10,7 +10,7 @@ import UIKit
 public extension UIApplication {
     /// 获取当前的keywindow
     var window: UIWindow? {
-        if #available(iOS 13.0, *) {
+        if #available(iOS 15.0, *) {
             for scene in UIApplication.shared.connectedScenes {
                 if let scene = scene as? UIWindowScene, scene.activationState == .foregroundActive {
                     for window in scene.windows {
