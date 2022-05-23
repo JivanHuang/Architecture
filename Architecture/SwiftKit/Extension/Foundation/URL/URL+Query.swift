@@ -48,9 +48,7 @@ private extension URLQueryItem {
 
 private extension String {
     func urlEncoded() -> String? {
-        addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)?
-            .replacingOccurrences(of: "&", with: "%26")
-            .replacingOccurrences(of: "+", with: "%2B")
+        addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)
     }
 }
 

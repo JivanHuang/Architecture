@@ -9,6 +9,8 @@ import CommonCrypto
 import Foundation
 // MD5 加密已经不在安全
 public class MD5StringEncoder: StringEncoder {
+    public init() {}
+
     public func encode(_ string: String) -> String? {
         guard let chars = string.cString(using: .utf8) else { return string }
         let stringLegth = CUnsignedInt(string.lengthOfBytes(using: .utf8))
@@ -22,6 +24,4 @@ public class MD5StringEncoder: StringEncoder {
         result.deallocate()
         return hash
     }
-
-    public init() {}
 }
