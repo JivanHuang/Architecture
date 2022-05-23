@@ -10,6 +10,9 @@
 		45B61A93448E7A7ADB4D974C /* Pods_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5CF12118179EB516553528 /* Pods_Architecture.framework */; };
 		86EA86CA54275E4D9458F2B8 /* Pods_ArchitectureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331F87846DB28FB3081BB356 /* Pods_ArchitectureTests.framework */; };
 		8C2B813B283B3155001D35C4 /* MD5StringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B813A283B3155001D35C4 /* MD5StringEncoder.swift */; };
+		8C2B813E283B5798001D35C4 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B813D283B5798001D35C4 /* NSObject+ClassName.swift */; };
+		8C2B8141283B595E001D35C4 /* UISwitch+Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B8140283B595E001D35C4 /* UISwitch+Toggle.swift */; };
+		8C2B8144283B5DBA001D35C4 /*  UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B8143283B5DBA001D35C4 /*  UIAlertController+Extension.swift */; };
 		8C40861E26CD003300C26A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40861D26CD003300C26A55 /* AppDelegate.swift */; };
 		8C40862726CD003700C26A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C40862626CD003700C26A55 /* Assets.xcassets */; };
 		8C40862A26CD003700C26A55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C40862826CD003700C26A55 /* LaunchScreen.storyboard */; };
@@ -97,6 +100,9 @@
 		7176178609C383134D9D2247 /* Pods-Architecture-ArchitectureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture-ArchitectureUITests.release.xcconfig"; path = "Target Support Files/Pods-Architecture-ArchitectureUITests/Pods-Architecture-ArchitectureUITests.release.xcconfig"; sourceTree = "<group>"; };
 		75A92A49EF96754FC39951D8 /* Pods-Architecture-ArchitectureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture-ArchitectureUITests.debug.xcconfig"; path = "Target Support Files/Pods-Architecture-ArchitectureUITests/Pods-Architecture-ArchitectureUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C2B813A283B3155001D35C4 /* MD5StringEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5StringEncoder.swift; sourceTree = "<group>"; };
+		8C2B813D283B5798001D35C4 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		8C2B8140283B595E001D35C4 /* UISwitch+Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Toggle.swift"; sourceTree = "<group>"; };
+		8C2B8143283B5DBA001D35C4 /*  UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		8C40861A26CD003300C26A55 /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C40861D26CD003300C26A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C40862626CD003700C26A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -207,6 +213,30 @@
 				8C4086E026CE5C7800C26A55 /* WebViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		8C2B813C283B5778001D35C4 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B813D283B5798001D35C4 /* NSObject+ClassName.swift */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		8C2B813F283B592A001D35C4 /* UISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B8140283B595E001D35C4 /* UISwitch+Toggle.swift */,
+			);
+			path = UISwitch;
+			sourceTree = "<group>";
+		};
+		8C2B8142283B5D8F001D35C4 /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B8143283B5DBA001D35C4 /*  UIAlertController+Extension.swift */,
+			);
+			path = UIAlertController;
 			sourceTree = "<group>";
 		};
 		8C40861126CD003300C26A55 = {
@@ -367,6 +397,8 @@
 		8CEDA7AA28362A2C004BC3AC /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				8C2B8142283B5D8F001D35C4 /* UIAlertController */,
+				8C2B813F283B592A001D35C4 /* UISwitch */,
 				8CEDA7B228362A2C004BC3AC /* UIApplication */,
 				8CEDA7B528362A2C004BC3AC /* UIButton */,
 				8CEDA7B728362A2C004BC3AC /* UIColor */,
@@ -477,6 +509,7 @@
 		8CEDA7C528362A2C004BC3AC /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				8C2B813C283B5778001D35C4 /* NSObject */,
 				8CEDA7CA28362A2C004BC3AC /* Array */,
 				8CEDA7CF28362A2C004BC3AC /* Bundle */,
 				8CEDA7C828362A2C004BC3AC /* Collection */,
@@ -887,6 +920,7 @@
 				8C8D03D027B3984300FD9150 /* NetworkConfig.swift in Sources */,
 				8CEDA80A28362A2C004BC3AC /* CALayer+Chain.swift in Sources */,
 				8CEDA7FD28362A2C004BC3AC /* UserDefaults+Codable.swift in Sources */,
+				8C2B813E283B5798001D35C4 /* NSObject+ClassName.swift in Sources */,
 				8C4086DC26CE3FCE00C26A55 /* NetWork.swift in Sources */,
 				8CEDA7F028362A2C004BC3AC /* UIScreen+Size.swift in Sources */,
 				8CEDA7F328362A2C004BC3AC /* UIApplication+ViewController.swift in Sources */,
@@ -910,6 +944,7 @@
 				8CEDA80728362A2C004BC3AC /* Double+Transform.swift in Sources */,
 				8C2B813B283B3155001D35C4 /* MD5StringEncoder.swift in Sources */,
 				8CEDA80328362A2C004BC3AC /* URL+Query.swift in Sources */,
+				8C2B8144283B5DBA001D35C4 /*  UIAlertController+Extension.swift in Sources */,
 				8CEDA7F128362A2C004BC3AC /* UILabel+Chain.swift in Sources */,
 				8CEDA80D28362A2C004BC3AC /* Base64StringCoder.swift in Sources */,
 				8CEDA80128362A2C004BC3AC /* Date+Format.swift in Sources */,
@@ -926,6 +961,7 @@
 				8CEDA7F228362A2C004BC3AC /* UIApplication+Window.swift in Sources */,
 				8CEDA7EC28362A2C004BC3AC /* IPAddressValidator.swift in Sources */,
 				8CEDA80E28362A2C004BC3AC /* StringCoder.swift in Sources */,
+				8C2B8141283B595E001D35C4 /* UISwitch+Toggle.swift in Sources */,
 				8C4086D826CE3FCE00C26A55 /* RequestManager.swift in Sources */,
 				8C40865726CD037600C26A55 /* TabBarController.swift in Sources */,
 				8CEDA7FB28362A2C004BC3AC /* UIControl+Chain.swift in Sources */,
