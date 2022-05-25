@@ -34,6 +34,7 @@
 		8C8D03D027B3984300FD9150 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CC27B3984300FD9150 /* NetworkConfig.swift */; };
 		8C8D03D127B3984300FD9150 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CD27B3984300FD9150 /* DataTransferService.swift */; };
 		8C8D03D227B3984300FD9150 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CE27B3984300FD9150 /* NetworkService.swift */; };
+		8C9F7B72283E0E9D0031BD6E /* UIControl+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */; };
 		8CEDA7E828362A2C004BC3AC /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7A128362A2C004BC3AC /* EmailValidator.swift */; };
 		8CEDA7E928362A2C004BC3AC /* PhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7A228362A2C004BC3AC /* PhoneNumberValidator.swift */; };
 		8CEDA7EA28362A2C004BC3AC /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7A328362A2C004BC3AC /* Validator.swift */; };
@@ -129,6 +130,7 @@
 		8C8D03CC27B3984300FD9150 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		8C8D03CD27B3984300FD9150 /* DataTransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
 		8C8D03CE27B3984300FD9150 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Closure.swift"; sourceTree = "<group>"; };
 		8CEDA7A128362A2C004BC3AC /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		8CEDA7A228362A2C004BC3AC /* PhoneNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidator.swift; sourceTree = "<group>"; };
 		8CEDA7A328362A2C004BC3AC /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
@@ -491,6 +493,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEDA7C228362A2C004BC3AC /* UIControl+Chain.swift */,
+				8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */,
 			);
 			path = UIControl;
 			sourceTree = "<group>";
@@ -943,6 +946,7 @@
 				8C2B8144283B5DBA001D35C4 /*  UIAlertController+Extension.swift in Sources */,
 				8CEDA7F128362A2C004BC3AC /* UILabel+Chain.swift in Sources */,
 				8CEDA80D28362A2C004BC3AC /* Base64StringCoder.swift in Sources */,
+				8C9F7B72283E0E9D0031BD6E /* UIControl+Closure.swift in Sources */,
 				8CEDA80128362A2C004BC3AC /* Date+Format.swift in Sources */,
 				8CEDA80C28362A2C004BC3AC /* Theme.swift in Sources */,
 				8CEDA7EF28362A2C004BC3AC /* UIImage+Color.swift in Sources */,
