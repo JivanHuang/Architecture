@@ -47,7 +47,6 @@
 		8CEDA7F228362A2C004BC3AC /* UIApplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7B328362A2C004BC3AC /* UIApplication+Window.swift */; };
 		8CEDA7F328362A2C004BC3AC /* UIApplication+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7B428362A2C004BC3AC /* UIApplication+ViewController.swift */; };
 		8CEDA7F428362A2C004BC3AC /* UIButton+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7B628362A2C004BC3AC /* UIButton+Chain.swift */; };
-		8CEDA7F528362A2C004BC3AC /* UIColor+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7B828362A2C004BC3AC /* UIColor+Transform.swift */; };
 		8CEDA7F628362A2C004BC3AC /* UIColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7B928362A2C004BC3AC /* UIColor+HEX.swift */; };
 		8CEDA7F728362A2C004BC3AC /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7BA28362A2C004BC3AC /* UIColor+RGB.swift */; };
 		8CEDA7F828362A2C004BC3AC /* UIView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7BC28362A2C004BC3AC /* UIView+Chain.swift */; };
@@ -143,7 +142,6 @@
 		8CEDA7B328362A2C004BC3AC /* UIApplication+Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Window.swift"; sourceTree = "<group>"; };
 		8CEDA7B428362A2C004BC3AC /* UIApplication+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+ViewController.swift"; sourceTree = "<group>"; };
 		8CEDA7B628362A2C004BC3AC /* UIButton+Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Chain.swift"; sourceTree = "<group>"; };
-		8CEDA7B828362A2C004BC3AC /* UIColor+Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Transform.swift"; sourceTree = "<group>"; };
 		8CEDA7B928362A2C004BC3AC /* UIColor+HEX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HEX.swift"; sourceTree = "<group>"; };
 		8CEDA7BA28362A2C004BC3AC /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
 		8CEDA7BC28362A2C004BC3AC /* UIView+Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Chain.swift"; sourceTree = "<group>"; };
@@ -459,7 +457,6 @@
 		8CEDA7B728362A2C004BC3AC /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				8CEDA7B828362A2C004BC3AC /* UIColor+Transform.swift */,
 				8CEDA7B928362A2C004BC3AC /* UIColor+HEX.swift */,
 				8CEDA7BA28362A2C004BC3AC /* UIColor+RGB.swift */,
 			);
@@ -937,7 +934,6 @@
 				8C4086DA26CE3FCE00C26A55 /* NetworkLog.swift in Sources */,
 				8CEDA80428362A2C004BC3AC /* Optional+IsSet.swift in Sources */,
 				8CEDA80528362A2C004BC3AC /* Int+Transform.swift in Sources */,
-				8CEDA7F528362A2C004BC3AC /* UIColor+Transform.swift in Sources */,
 				8C4086D926CE3FCE00C26A55 /* CacheManager.swift in Sources */,
 				8C4086E226CE5C7800C26A55 /* WebViewController.swift in Sources */,
 				8CEDA80928362A2C004BC3AC /* String+Transform.swift in Sources */,

@@ -30,21 +30,11 @@ public extension UIColor {
 public extension UIColor {
     /// 十六进制字符串设置颜色(方法)
     static func hexStringColor(hexString: String, alpha: CGFloat = 1.0) -> UIColor {
-        let newColor = hexStringToColorRGB(hexString: hexString)
-        guard let r = newColor.r, let g = newColor.g, let b = newColor.b else {
-            #if DEBUG
-                assertionFailure("颜色值有误!")
-            #endif
-            return .white
-        }
-        return color(r: r, g: g, b: b, alpha: alpha)
+        return UIColor(hexString: hexString, alpha: alpha) ?? .white
     }
 
     /// 十六进制 Int 颜色的使用(方法)
     static func hexIntColor(hexInt: Int, alpha: CGFloat = 1) -> UIColor {
-        let redComponet = Float(hexInt >> 16)
-        let greenComponent = Float((hexInt & 0xFF00) >> 8)
-        let blueComponent = Float(hexInt & 0xFF)
-        return UIColor(red: CGFloat(redComponet / 255.0), green: CGFloat(greenComponent / 255.0), blue: CGFloat(blueComponent / 255.0), alpha: alpha)
+        return UIColor(hexInt: hexInt, alpha: alpha)
     }
 }
