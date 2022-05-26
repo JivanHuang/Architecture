@@ -357,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEDA7A628362A2C004BC3AC /* Extension */,
+				8CDBED22283F565D009650CF /* Occupiable */,
 				8CEDA7E128362A2C004BC3AC /* ReusableFormatters */,
 				8CEDA7E528362A2C004BC3AC /* StringCoder */,
 				8CEDA7E328362A2C004BC3AC /* Theme */,
@@ -380,7 +381,6 @@
 		8CEDA7A628362A2C004BC3AC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8CDBED22283F565D009650CF /* Occupiable */,
 				8CEDA7A728362A2C004BC3AC /* CoreGraphics */,
 				8CEDA7AA28362A2C004BC3AC /* UIKit */,
 				8CEDA7C528362A2C004BC3AC /* Foundation */,
