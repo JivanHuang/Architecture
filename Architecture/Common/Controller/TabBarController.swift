@@ -13,6 +13,7 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupChildControllers()
+        setupBarAppearance()
     }
 }
 
@@ -36,8 +37,24 @@ private extension TabBarController {
     func configNavigationController(viewController: ViewController, title: String?, image: UIImage?, selectedImage: UIImage?) -> NavigationController
     {
         let navigationController = NavigationController(rootViewController: viewController)
+        viewController.navigationItem.title = title
         let tabBarItem = UITabBarItem(title: title, image: image, selectedImage: selectedImage)
         navigationController.tabBarItem = tabBarItem
         return navigationController
+    }
+}
+
+private extension TabBarController {
+    func setupBarAppearance() {
+        if #available(iOS 15.0, *) {
+            let appearance = UITabBarAppearance()
+            appearance.backgroundColor = .white
+            appearance.shadowImage = UIImage.image(color: .clear)
+            tabBar.standardAppearance = appearance
+            tabBar.scrollEdgeAppearance = appearance
+        } else {
+            tabBar.backgroundColor = .white
+            tabBar.shadowImage = UIImage.image(color: .clear)
+        }
     }
 }

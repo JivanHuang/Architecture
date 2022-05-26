@@ -14,6 +14,7 @@ class NavigationController: UINavigationController {
         super.viewDidLoad()
         popDelegate = interactivePopGestureRecognizer?.delegate
         delegate = self
+        setupNavgationAppearance()
     }
 
     // Push二级界面自动隐藏TabBar
@@ -41,6 +42,26 @@ extension NavigationController: UINavigationControllerDelegate {
             interactivePopGestureRecognizer!.delegate = popDelegate
         } else {
             interactivePopGestureRecognizer!.delegate = nil
+        }
+    }
+}
+
+private extension NavigationController {
+    func setupNavgationAppearance() {
+        let backgroudImage = UIImage.image(color: .white)
+        let shadowImage = UIImage.image(color: .clear)
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .semibold)]
+        if #available(iOS 15.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.backgroundImage = backgroudImage
+            appearance.shadowImage = shadowImage
+            appearance.titleTextAttributes = titleTextAttributes
+            navigationBar.standardAppearance = appearance
+            navigationBar.scrollEdgeAppearance = appearance
+        } else {
+            navigationBar.setBackgroundImage(backgroudImage, for: .default)
+            navigationBar.shadowImage = shadowImage
+            navigationBar.titleTextAttributes = titleTextAttributes
         }
     }
 }
