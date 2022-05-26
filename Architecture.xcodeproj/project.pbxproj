@@ -36,6 +36,7 @@
 		8C8D03D227B3984300FD9150 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CE27B3984300FD9150 /* NetworkService.swift */; };
 		8C9F7B72283E0E9D0031BD6E /* UIControl+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */; };
 		8CDBED24283F571F009650CF /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDBED23283F571F009650CF /* Occupiable.swift */; };
+		8CDBED26283F596A009650CF /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDBED25283F5969009650CF /* CALayer+Animation.swift */; };
 		8CEDA7E828362A2C004BC3AC /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7A128362A2C004BC3AC /* EmailValidator.swift */; };
 		8CEDA7E928362A2C004BC3AC /* PhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7A228362A2C004BC3AC /* PhoneNumberValidator.swift */; };
 		8CEDA7EA28362A2C004BC3AC /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7A328362A2C004BC3AC /* Validator.swift */; };
@@ -132,6 +133,7 @@
 		8C8D03CE27B3984300FD9150 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Closure.swift"; sourceTree = "<group>"; };
 		8CDBED23283F571F009650CF /* Occupiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Occupiable.swift; sourceTree = "<group>"; };
+		8CDBED25283F5969009650CF /* CALayer+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animation.swift"; sourceTree = "<group>"; };
 		8CEDA7A128362A2C004BC3AC /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		8CEDA7A228362A2C004BC3AC /* PhoneNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidator.swift; sourceTree = "<group>"; };
 		8CEDA7A328362A2C004BC3AC /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
@@ -626,6 +628,7 @@
 		8CEDA7DF28362A2C004BC3AC /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
+				8CDBED25283F5969009650CF /* CALayer+Animation.swift */,
 				8CEDA7E028362A2C004BC3AC /* CALayer+Chain.swift */,
 			);
 			path = CALayer;
@@ -965,6 +968,7 @@
 				8C40865726CD037600C26A55 /* TabBarController.swift in Sources */,
 				8CEDA7FB28362A2C004BC3AC /* UIControl+Chain.swift in Sources */,
 				8CEDA7F728362A2C004BC3AC /* UIColor+RGB.swift in Sources */,
+				8CDBED26283F596A009650CF /* CALayer+Animation.swift in Sources */,
 				8CDBED24283F571F009650CF /* Occupiable.swift in Sources */,
 				8CEDA7F628362A2C004BC3AC /* UIColor+HEX.swift in Sources */,
 				8CEDA80028362A2C004BC3AC /* Array+Index.swift in Sources */,
