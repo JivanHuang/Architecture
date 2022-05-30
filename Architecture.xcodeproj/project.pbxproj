@@ -29,6 +29,8 @@
 		8C4086DE26CE3FCE00C26A55 /* CacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D726CE3FCE00C26A55 /* CacheKey.swift */; };
 		8C4086E126CE5C7800C26A55 /* BackWebviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086DF26CE5C7800C26A55 /* BackWebviewController.swift */; };
 		8C4086E226CE5C7800C26A55 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086E026CE5C7800C26A55 /* WebViewController.swift */; };
+		8C4FED512844C2AF008EB945 /* Theme+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FED502844C2AF008EB945 /* Theme+Font.swift */; };
+		8C4FED532844C30B008EB945 /* Theme+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FED522844C30B008EB945 /* Theme+Color.swift */; };
 		8C76C21227588A75008ED8D2 /* NamespaceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76C21127588A75008ED8D2 /* NamespaceWrapper.swift */; };
 		8C8D03CF27B3984300FD9150 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CB27B3984300FD9150 /* Endpoint.swift */; };
 		8C8D03D027B3984300FD9150 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CC27B3984300FD9150 /* NetworkConfig.swift */; };
@@ -126,6 +128,8 @@
 		8C4086D726CE3FCE00C26A55 /* CacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheKey.swift; sourceTree = "<group>"; };
 		8C4086DF26CE5C7800C26A55 /* BackWebviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackWebviewController.swift; sourceTree = "<group>"; };
 		8C4086E026CE5C7800C26A55 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		8C4FED502844C2AF008EB945 /* Theme+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme+Font.swift"; sourceTree = "<group>"; };
+		8C4FED522844C30B008EB945 /* Theme+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme+Color.swift"; sourceTree = "<group>"; };
 		8C76C21127588A75008ED8D2 /* NamespaceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamespaceWrapper.swift; sourceTree = "<group>"; };
 		8C8D03CB27B3984300FD9150 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		8C8D03CC27B3984300FD9150 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
@@ -646,6 +650,8 @@
 			isa = PBXGroup;
 			children = (
 				8CEDA7E428362A2C004BC3AC /* Theme.swift */,
+				8C4FED502844C2AF008EB945 /* Theme+Font.swift */,
+				8C4FED522844C30B008EB945 /* Theme+Color.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -920,6 +926,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C4FED512844C2AF008EB945 /* Theme+Font.swift in Sources */,
 				8C8D03D027B3984300FD9150 /* NetworkConfig.swift in Sources */,
 				8CEDA80A28362A2C004BC3AC /* CALayer+Chain.swift in Sources */,
 				8CEDA7FD28362A2C004BC3AC /* UserDefaults+Codable.swift in Sources */,
@@ -959,6 +966,7 @@
 				8CEDA80628362A2C004BC3AC /* Float+Transform.swift in Sources */,
 				8CEDA7EA28362A2C004BC3AC /* Validator.swift in Sources */,
 				8CEDA7F428362A2C004BC3AC /* UIButton+Chain.swift in Sources */,
+				8C4FED532844C30B008EB945 /* Theme+Color.swift in Sources */,
 				8CEDA7FF28362A2C004BC3AC /* Array+Subscript.swift in Sources */,
 				8CEDA7F228362A2C004BC3AC /* UIApplication+Window.swift in Sources */,
 				8CEDA7EC28362A2C004BC3AC /* IPAddressValidator.swift in Sources */,
