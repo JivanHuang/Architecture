@@ -39,6 +39,8 @@
 		8C9F7B72283E0E9D0031BD6E /* UIControl+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */; };
 		8CDBED24283F571F009650CF /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDBED23283F571F009650CF /* Occupiable.swift */; };
 		8CDBED26283F596A009650CF /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDBED25283F5969009650CF /* CALayer+Animation.swift */; };
+		8CEA832B28474B0F00E162BD /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA832928474B0F00E162BD /* ProgressHUD.swift */; };
+		8CEA832C28474B0F00E162BD /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CEA832A28474B0F00E162BD /* ProgressHUD.bundle */; };
 		8CEDA7E828362A2C004BC3AC /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7A128362A2C004BC3AC /* EmailValidator.swift */; };
 		8CEDA7E928362A2C004BC3AC /* PhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7A228362A2C004BC3AC /* PhoneNumberValidator.swift */; };
 		8CEDA7EA28362A2C004BC3AC /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7A328362A2C004BC3AC /* Validator.swift */; };
@@ -138,6 +140,8 @@
 		8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Closure.swift"; sourceTree = "<group>"; };
 		8CDBED23283F571F009650CF /* Occupiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Occupiable.swift; sourceTree = "<group>"; };
 		8CDBED25283F5969009650CF /* CALayer+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animation.swift"; sourceTree = "<group>"; };
+		8CEA832928474B0F00E162BD /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		8CEA832A28474B0F00E162BD /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		8CEDA7A128362A2C004BC3AC /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		8CEDA7A228362A2C004BC3AC /* PhoneNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidator.swift; sourceTree = "<group>"; };
 		8CEDA7A328362A2C004BC3AC /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
@@ -272,6 +276,7 @@
 			children = (
 				8C40861D26CD003300C26A55 /* AppDelegate.swift */,
 				8CEDA79E28362A2C004BC3AC /* SwiftKit */,
+				8C709B882845DCF40030B2A3 /* Tools */,
 				8C40864D26CD00F100C26A55 /* Common */,
 				8C8D03D427B3A08700FD9150 /* Net */,
 				8C4086AF26CE1DF200C26A55 /* Protocol */,
@@ -329,6 +334,14 @@
 			path = NetWork;
 			sourceTree = "<group>";
 		};
+		8C709B882845DCF40030B2A3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA832828474B0F00E162BD /* ProgressHUD */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		8C8D03CA27B397BF00FD9150 /* EndPoint */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +368,15 @@
 				8CDBED23283F571F009650CF /* Occupiable.swift */,
 			);
 			path = Occupiable;
+			sourceTree = "<group>";
+		};
+		8CEA832828474B0F00E162BD /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA832928474B0F00E162BD /* ProgressHUD.swift */,
+				8CEA832A28474B0F00E162BD /* ProgressHUD.bundle */,
+			);
+			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
 		8CEDA79E28362A2C004BC3AC /* SwiftKit */ = {
@@ -650,8 +672,8 @@
 			isa = PBXGroup;
 			children = (
 				8CEDA7E428362A2C004BC3AC /* Theme.swift */,
-				8C4FED502844C2AF008EB945 /* Theme+Font.swift */,
 				8C4FED522844C30B008EB945 /* Theme+Color.swift */,
+				8C4FED502844C2AF008EB945 /* Theme+Font.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -799,6 +821,7 @@
 			files = (
 				8C40862A26CD003700C26A55 /* LaunchScreen.storyboard in Resources */,
 				8C40862726CD003700C26A55 /* Assets.xcassets in Resources */,
+				8CEA832C28474B0F00E162BD /* ProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -960,6 +983,7 @@
 				8CEDA80C28362A2C004BC3AC /* Theme.swift in Sources */,
 				8CEDA7EF28362A2C004BC3AC /* UIImage+Color.swift in Sources */,
 				8CEDA80228362A2C004BC3AC /* Bundle+BundleInformation.swift in Sources */,
+				8CEA832B28474B0F00E162BD /* ProgressHUD.swift in Sources */,
 				8C8D03D127B3984300FD9150 /* DataTransferService.swift in Sources */,
 				8CEDA7FC28362A2C004BC3AC /* UITextField+Chain.swift in Sources */,
 				8CEDA7E828362A2C004BC3AC /* EmailValidator.swift in Sources */,
