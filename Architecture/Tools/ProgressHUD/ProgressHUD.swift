@@ -19,7 +19,7 @@ public enum ProgressAnimationType {
 }
 
 public enum ProgressIcon {
-    case `none`
+    case none
     case succeed
     case failed
     case warn
@@ -28,7 +28,7 @@ public enum ProgressIcon {
 
 public enum ProgressBackgroundStyle {
     case solid
-    case blur
+    case blur(style: UIBlurEffect.Style)
 }
 
 public extension ProgressHUD {
@@ -60,6 +60,11 @@ public extension ProgressHUD {
     class var animationType: ProgressAnimationType {
         get { shared.animationType }
         set { shared.animationType = newValue }
+    }
+    
+    class var styleBackground: ProgressBackgroundStyle {
+        get { shared.styleBackground }
+        set { shared.styleBackground = newValue }
     }
 }
 
@@ -117,6 +122,7 @@ public extension ProgressHUD {
 public class ProgressHUD: UIView {
     private var viewBackground: UIView?
     private var colorBackground = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+    private var styleBackground: ProgressBackgroundStyle = .solid
     private var toolbarHUD: UIToolbar?
     private var indicatorView: UIActivityIndicatorView?
     private var indicatorViewStyle: UIActivityIndicatorView.Style = {
@@ -177,6 +183,15 @@ public class ProgressHUD: UIView {
         }
         viewBackground?.backgroundColor = interaction ? .clear : colorBackground
         viewBackground?.isUserInteractionEnabled = (interaction == false)
+        viewBackground?.subviews
+            .filter { $0.isKind(of: UIVisualEffectView.self) }
+            .forEach { $0.removeFromSuperview() }
+        switch styleBackground {
+        case .blur(let style):
+            let blurView = UIVisualEffectView(effect: UIBlurEffect(style: style))
+            toolbarHUD?.addSubview(blurView)
+        default: break
+        }
     }
     
     private func setupToolbar() {
@@ -274,6 +289,9 @@ public class ProgressHUD: UIView {
         let center = CGPoint(x: screen.size.width/2, y: (screen.size.height)/2)
         toolbarHUD?.center = center
         viewBackground?.frame = screen
+        viewBackground?.subviews
+            .filter { $0.isKind(of: UIVisualEffectView.self) }
+            .forEach { $0.frame = screen }
     }
     
     private func hudShow() {
