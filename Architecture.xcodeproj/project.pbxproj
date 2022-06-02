@@ -21,21 +21,11 @@
 		8C40865726CD037600C26A55 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40865626CD037600C26A55 /* TabBarController.swift */; };
 		8C40865926CD039A00C26A55 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40865826CD039A00C26A55 /* NavigationController.swift */; };
 		8C40865B26CD03AB00C26A55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40865A26CD03AB00C26A55 /* ViewController.swift */; };
-		8C4086D826CE3FCE00C26A55 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D126CE3FCE00C26A55 /* RequestManager.swift */; };
-		8C4086D926CE3FCE00C26A55 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D226CE3FCE00C26A55 /* CacheManager.swift */; };
-		8C4086DA26CE3FCE00C26A55 /* NetworkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D326CE3FCE00C26A55 /* NetworkLog.swift */; };
-		8C4086DB26CE3FCE00C26A55 /* NetWorkValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D426CE3FCE00C26A55 /* NetWorkValue.swift */; };
-		8C4086DC26CE3FCE00C26A55 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D526CE3FCE00C26A55 /* NetWork.swift */; };
-		8C4086DE26CE3FCE00C26A55 /* CacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086D726CE3FCE00C26A55 /* CacheKey.swift */; };
 		8C4086E126CE5C7800C26A55 /* BackWebviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086DF26CE5C7800C26A55 /* BackWebviewController.swift */; };
 		8C4086E226CE5C7800C26A55 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086E026CE5C7800C26A55 /* WebViewController.swift */; };
 		8C4FED512844C2AF008EB945 /* Theme+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FED502844C2AF008EB945 /* Theme+Font.swift */; };
 		8C4FED532844C30B008EB945 /* Theme+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FED522844C30B008EB945 /* Theme+Color.swift */; };
 		8C76C21227588A75008ED8D2 /* NamespaceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76C21127588A75008ED8D2 /* NamespaceWrapper.swift */; };
-		8C8D03CF27B3984300FD9150 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CB27B3984300FD9150 /* Endpoint.swift */; };
-		8C8D03D027B3984300FD9150 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CC27B3984300FD9150 /* NetworkConfig.swift */; };
-		8C8D03D127B3984300FD9150 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CD27B3984300FD9150 /* DataTransferService.swift */; };
-		8C8D03D227B3984300FD9150 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D03CE27B3984300FD9150 /* NetworkService.swift */; };
 		8C9F7B72283E0E9D0031BD6E /* UIControl+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */; };
 		8CDBED24283F571F009650CF /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDBED23283F571F009650CF /* Occupiable.swift */; };
 		8CDBED26283F596A009650CF /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDBED25283F5969009650CF /* CALayer+Animation.swift */; };
@@ -122,21 +112,11 @@
 		8C40865626CD037600C26A55 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8C40865826CD039A00C26A55 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		8C40865A26CD03AB00C26A55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8C4086D126CE3FCE00C26A55 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
-		8C4086D226CE3FCE00C26A55 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
-		8C4086D326CE3FCE00C26A55 /* NetworkLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLog.swift; sourceTree = "<group>"; };
-		8C4086D426CE3FCE00C26A55 /* NetWorkValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkValue.swift; sourceTree = "<group>"; };
-		8C4086D526CE3FCE00C26A55 /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
-		8C4086D726CE3FCE00C26A55 /* CacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheKey.swift; sourceTree = "<group>"; };
 		8C4086DF26CE5C7800C26A55 /* BackWebviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackWebviewController.swift; sourceTree = "<group>"; };
 		8C4086E026CE5C7800C26A55 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		8C4FED502844C2AF008EB945 /* Theme+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme+Font.swift"; sourceTree = "<group>"; };
 		8C4FED522844C30B008EB945 /* Theme+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme+Color.swift"; sourceTree = "<group>"; };
 		8C76C21127588A75008ED8D2 /* NamespaceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamespaceWrapper.swift; sourceTree = "<group>"; };
-		8C8D03CB27B3984300FD9150 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		8C8D03CC27B3984300FD9150 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
-		8C8D03CD27B3984300FD9150 /* DataTransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
-		8C8D03CE27B3984300FD9150 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Closure.swift"; sourceTree = "<group>"; };
 		8CDBED23283F571F009650CF /* Occupiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Occupiable.swift; sourceTree = "<group>"; };
 		8CDBED25283F5969009650CF /* CALayer+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animation.swift"; sourceTree = "<group>"; };
@@ -278,7 +258,6 @@
 				8CEDA79E28362A2C004BC3AC /* SwiftKit */,
 				8C709B882845DCF40030B2A3 /* Tools */,
 				8C40864D26CD00F100C26A55 /* Common */,
-				8C8D03D427B3A08700FD9150 /* Net */,
 				8C4086AF26CE1DF200C26A55 /* Protocol */,
 				8C40862B26CD003700C26A55 /* Info.plist */,
 				8C40862626CD003700C26A55 /* Assets.xcassets */,
@@ -321,45 +300,12 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		8C4086D026CE3FCE00C26A55 /* NetWork */ = {
-			isa = PBXGroup;
-			children = (
-				8C4086D726CE3FCE00C26A55 /* CacheKey.swift */,
-				8C4086D226CE3FCE00C26A55 /* CacheManager.swift */,
-				8C4086D326CE3FCE00C26A55 /* NetworkLog.swift */,
-				8C4086D526CE3FCE00C26A55 /* NetWork.swift */,
-				8C4086D426CE3FCE00C26A55 /* NetWorkValue.swift */,
-				8C4086D126CE3FCE00C26A55 /* RequestManager.swift */,
-			);
-			path = NetWork;
-			sourceTree = "<group>";
-		};
 		8C709B882845DCF40030B2A3 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 				8CEA832828474B0F00E162BD /* ProgressHUD */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		8C8D03CA27B397BF00FD9150 /* EndPoint */ = {
-			isa = PBXGroup;
-			children = (
-				8C8D03CD27B3984300FD9150 /* DataTransferService.swift */,
-				8C8D03CB27B3984300FD9150 /* Endpoint.swift */,
-				8C8D03CC27B3984300FD9150 /* NetworkConfig.swift */,
-				8C8D03CE27B3984300FD9150 /* NetworkService.swift */,
-			);
-			path = EndPoint;
-			sourceTree = "<group>";
-		};
-		8C8D03D427B3A08700FD9150 /* Net */ = {
-			isa = PBXGroup;
-			children = (
-				8C8D03CA27B397BF00FD9150 /* EndPoint */,
-				8C4086D026CE3FCE00C26A55 /* NetWork */,
-			);
-			path = Net;
 			sourceTree = "<group>";
 		};
 		8CDBED22283F565D009650CF /* Occupiable */ = {
@@ -950,26 +896,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C4FED512844C2AF008EB945 /* Theme+Font.swift in Sources */,
-				8C8D03D027B3984300FD9150 /* NetworkConfig.swift in Sources */,
 				8CEDA80A28362A2C004BC3AC /* CALayer+Chain.swift in Sources */,
 				8CEDA7FD28362A2C004BC3AC /* UserDefaults+Codable.swift in Sources */,
 				8C2B813E283B5798001D35C4 /* NSObject+ClassName.swift in Sources */,
-				8C4086DC26CE3FCE00C26A55 /* NetWork.swift in Sources */,
 				8CEDA7F028362A2C004BC3AC /* UIScreen+Size.swift in Sources */,
 				8CEDA7F328362A2C004BC3AC /* UIApplication+ViewController.swift in Sources */,
 				8CEDA7FA28362A2C004BC3AC /* UIViewController+Modal.swift in Sources */,
 				8CEDA7EB28362A2C004BC3AC /* IDCardValidator.swift in Sources */,
-				8C4086DB26CE3FCE00C26A55 /* NetWorkValue.swift in Sources */,
 				8C4086E126CE5C7800C26A55 /* BackWebviewController.swift in Sources */,
 				8CEDA7F928362A2C004BC3AC /* UIDevice+Idiom.swift in Sources */,
-				8C4086DE26CE3FCE00C26A55 /* CacheKey.swift in Sources */,
 				8CEDA7F828362A2C004BC3AC /* UIView+Chain.swift in Sources */,
 				8C40865926CD039A00C26A55 /* NavigationController.swift in Sources */,
 				8CEDA7ED28362A2C004BC3AC /* CGRect+Transform.swift in Sources */,
 				8C40865B26CD03AB00C26A55 /* ViewController.swift in Sources */,
-				8C4086DA26CE3FCE00C26A55 /* NetworkLog.swift in Sources */,
 				8CEDA80528362A2C004BC3AC /* Int+Transform.swift in Sources */,
-				8C4086D926CE3FCE00C26A55 /* CacheManager.swift in Sources */,
 				8C4086E226CE5C7800C26A55 /* WebViewController.swift in Sources */,
 				8CEDA80928362A2C004BC3AC /* String+Transform.swift in Sources */,
 				8CEDA80728362A2C004BC3AC /* Double+Transform.swift in Sources */,
@@ -984,7 +924,6 @@
 				8CEDA7EF28362A2C004BC3AC /* UIImage+Color.swift in Sources */,
 				8CEDA80228362A2C004BC3AC /* Bundle+BundleInformation.swift in Sources */,
 				8CEA832B28474B0F00E162BD /* ProgressHUD.swift in Sources */,
-				8C8D03D127B3984300FD9150 /* DataTransferService.swift in Sources */,
 				8CEDA7FC28362A2C004BC3AC /* UITextField+Chain.swift in Sources */,
 				8CEDA7E828362A2C004BC3AC /* EmailValidator.swift in Sources */,
 				8CEDA80628362A2C004BC3AC /* Float+Transform.swift in Sources */,
@@ -996,7 +935,6 @@
 				8CEDA7EC28362A2C004BC3AC /* IPAddressValidator.swift in Sources */,
 				8CEDA80E28362A2C004BC3AC /* StringCoder.swift in Sources */,
 				8C2B8141283B595E001D35C4 /* UISwitch+Toggle.swift in Sources */,
-				8C4086D826CE3FCE00C26A55 /* RequestManager.swift in Sources */,
 				8C40865726CD037600C26A55 /* TabBarController.swift in Sources */,
 				8CEDA7FB28362A2C004BC3AC /* UIControl+Chain.swift in Sources */,
 				8CEDA7F728362A2C004BC3AC /* UIColor+RGB.swift in Sources */,
@@ -1005,14 +943,12 @@
 				8CEDA7F628362A2C004BC3AC /* UIColor+HEX.swift in Sources */,
 				8CEDA80028362A2C004BC3AC /* Array+Index.swift in Sources */,
 				8CEDA7EE28362A2C004BC3AC /* UIImage+Transform.swift in Sources */,
-				8C8D03D227B3984300FD9150 /* NetworkService.swift in Sources */,
 				8C76C21227588A75008ED8D2 /* NamespaceWrapper.swift in Sources */,
 				8CEDA80B28362A2C004BC3AC /* ReusableFormatters.swift in Sources */,
 				8C40861E26CD003300C26A55 /* AppDelegate.swift in Sources */,
 				8CEDA7E928362A2C004BC3AC /* PhoneNumberValidator.swift in Sources */,
 				8CEDA7FE28362A2C004BC3AC /* Collection+Async.swift in Sources */,
 				8CEDA80828362A2C004BC3AC /* String+Subscript.swift in Sources */,
-				8C8D03CF27B3984300FD9150 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

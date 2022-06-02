@@ -17,13 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-extension AppDelegate{
-    
+extension AppDelegate {
     func makeKeyWindow() {
         let rootViewController = TabBarController()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        self.window?.rootViewController = rootViewController
+        window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
     }
 }
