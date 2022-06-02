@@ -123,7 +123,7 @@ public class ProgressHUD: UIView {
     private var viewBackground: UIView?
     private var colorBackground = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
     private var styleBackground: ProgressBackgroundStyle = .solid
-    private var toolbarHUD: UIToolbar?
+    private var toolbarHUD: UIView?
     private var indicatorView: UIActivityIndicatorView?
     private var indicatorViewStyle: UIActivityIndicatorView.Style = {
         if #available(iOS 13.0, *) {
@@ -196,8 +196,7 @@ public class ProgressHUD: UIView {
     
     private func setupToolbar() {
         if toolbarHUD == nil {
-            toolbarHUD = UIToolbar(frame: CGRect.zero)
-            toolbarHUD?.isTranslucent = true
+            toolbarHUD = UIView(frame: CGRect.zero)
             toolbarHUD?.clipsToBounds = true
             toolbarHUD?.layer.cornerRadius = 10
             toolbarHUD?.layer.masksToBounds = true
