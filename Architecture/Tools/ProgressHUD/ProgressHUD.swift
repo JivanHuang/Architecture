@@ -299,20 +299,38 @@ public class ProgressHUD: UIView {
         
         if alpha != 1 {
             alpha = 1
-            toolbarHUD?.alpha = 0
-            UIView.animate(withDuration: 0.15, delay: 0) {
-                self.toolbarHUD?.alpha = 1.0
+            if animationType == .fade {
+                toolbarHUD?.alpha = 0
+                UIView.animate(withDuration: 0.2, delay: 0) {
+                    self.toolbarHUD?.alpha = 1.0
+                }
+            }
+            
+            if animationType == .zoom {
+                let baseAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
+                baseAnimation.duration = 0.4
+                baseAnimation.isRemovedOnCompletion = true
+                baseAnimation.repeatCount = 1
+                baseAnimation.keyTimes = [0.0, 0.1, 0.2, 0.3, 0.4]
+                baseAnimation.values = [1.0, 1.1, 1.2, 1.1, 1.0]
+                toolbarHUD?.layer.add(baseAnimation, forKey: "ProgressHUD.scale")
             }
         }
     }
     
     private func hudHide() {
         if alpha == 1 {
-            UIView.animate(withDuration: 0.15, delay: 0, options: [.curveEaseInOut]) {
-                self.toolbarHUD?.alpha = 0
-            } completion: { _ in
-                self.hudDestroy()
-                self.alpha = 0
+            if animationType == .fade {
+                UIView.animate(withDuration: 0.2, delay: 0, options: [.curveEaseInOut]) {
+                    self.toolbarHUD?.alpha = 0
+                } completion: { _ in
+                    self.hudDestroy()
+                    self.alpha = 0
+                }
+            }
+            if animationType == .zoom {
+                hudDestroy()
+                alpha = 0
             }
         }
     }
