@@ -48,7 +48,7 @@ public extension UIScreen {
     var width: CGFloat { UIScreen.main.bounds.size.width }
 
     /// 屏幕宽度与设计图尺寸比例
-    var ratio: CGFloat { UIScreen.main.bounds.size.width / 375.0 }
+    var ratio: CGFloat { CGFloat(ceilf(Float(UIScreen.main.width / 375.0))) }
 
     /// 单个像素
     var kOnexPixel: CGFloat { 1 / UIScreen.main.scale }
