@@ -7,8 +7,6 @@
 
 import UIKit
 
-private typealias Tuple = (viewController: ViewController, title: String?, image: UIImage?, selectedImage: UIImage?)
-
 class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +17,7 @@ class TabBarController: UITabBarController {
 
 private extension TabBarController {
     func setupChildControllers() {
-        let home: Tuple = (ViewController(), "Home", UIImage(systemName: "house"), UIImage(systemName: "house.fill"))
+        let home = (ViewController(), "Home", UIImage(systemName: "house"), UIImage(systemName: "house.fill"))
 
         let square = (ViewController(), "Square", UIImage(systemName: "heart.text.square"), UIImage(systemName: "heart.text.square.fill"))
 
