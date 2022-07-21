@@ -32,7 +32,7 @@ public extension UIScreen {
     /// homeIndicator 高度
     var homeIndicatorHeight: CGFloat {
         guard let keyWindow = UIApplication.shared.window else { return 0.0 }
-        return keyWindow.window?.safeAreaInsets.bottom ?? 0.0
+        return keyWindow.safeAreaInsets.bottom
     }
 
     /// tabBar 高度

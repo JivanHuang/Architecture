@@ -9,7 +9,6 @@ target 'Architecture' do
 
   # Pods for Architecture
   pod 'Alamofire'
-  pod 'Cache'
   
   target 'ArchitectureTests' do
     inherit! :search_paths
