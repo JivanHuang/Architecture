@@ -18,33 +18,19 @@ class BackWebviewController: WebViewController, WKNavigationDelegate, UIGestureR
     deinit {
         self.webView.navigationDelegate = nil
     }
-
-    public convenience init(_ url: URL) {
+        
+    public convenience init(_ url: URL, backButtonTitle: String? = "返回", closeButtonTitle: String? = "关闭") {
         self.init()
         self.url = url
-        backButtonTitle = "返回"
-        closeButtonTitle = "关闭"
+        self.backButtonTitle = backButtonTitle
+        self.closeButtonTitle = closeButtonTitle
     }
-
-    public convenience init(_ htmlString: String) {
+    
+    public convenience init(_ htmlString: String, backButtonTitle: String? = "返回", closeButtonTitle: String? = "关闭") {
         self.init()
         self.htmlString = htmlString
-        backButtonTitle = "返回"
-        closeButtonTitle = "关闭"
-    }
-
-    public convenience init(_ url: URL, backButtonTitle: String?, closeButtonTitle: String?) {
-        self.init()
-        self.url = url
-        self.backButtonTitle = backButtonTitle ?? "返回"
-        self.closeButtonTitle = closeButtonTitle ?? "关闭"
-    }
-
-    public convenience init(_ htmlString: String, backButtonTitle: String?, closeButtonTitle: String?) {
-        self.init()
-        self.htmlString = htmlString
-        self.backButtonTitle = backButtonTitle ?? "返回"
-        self.closeButtonTitle = closeButtonTitle ?? "关闭"
+        self.backButtonTitle = backButtonTitle
+        self.closeButtonTitle = closeButtonTitle
     }
 
     override open func viewDidLoad() {
