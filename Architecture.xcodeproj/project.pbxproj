@@ -25,6 +25,7 @@
 		8C4086E226CE5C7800C26A55 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086E026CE5C7800C26A55 /* WebViewController.swift */; };
 		8C4FED512844C2AF008EB945 /* Theme+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FED502844C2AF008EB945 /* Theme+Font.swift */; };
 		8C4FED532844C30B008EB945 /* Theme+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FED522844C30B008EB945 /* Theme+Color.swift */; };
+		8C76855828BF4EC4004FF44E /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76855728BF4EC4004FF44E /* PlaceholderTextView.swift */; };
 		8C76C21227588A75008ED8D2 /* NamespaceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76C21127588A75008ED8D2 /* NamespaceWrapper.swift */; };
 		8C9F7B72283E0E9D0031BD6E /* UIControl+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */; };
 		8CDBED24283F571F009650CF /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDBED23283F571F009650CF /* Occupiable.swift */; };
@@ -116,6 +117,7 @@
 		8C4086E026CE5C7800C26A55 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		8C4FED502844C2AF008EB945 /* Theme+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme+Font.swift"; sourceTree = "<group>"; };
 		8C4FED522844C30B008EB945 /* Theme+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme+Color.swift"; sourceTree = "<group>"; };
+		8C76855728BF4EC4004FF44E /* PlaceholderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
 		8C76C21127588A75008ED8D2 /* NamespaceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamespaceWrapper.swift; sourceTree = "<group>"; };
 		8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Closure.swift"; sourceTree = "<group>"; };
 		8CDBED23283F571F009650CF /* Occupiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Occupiable.swift; sourceTree = "<group>"; };
@@ -256,7 +258,6 @@
 			children = (
 				8C40861D26CD003300C26A55 /* AppDelegate.swift */,
 				8CEDA79E28362A2C004BC3AC /* SwiftKit */,
-				8C709B882845DCF40030B2A3 /* Tools */,
 				8C40864D26CD00F100C26A55 /* Common */,
 				8C4086AF26CE1DF200C26A55 /* Protocol */,
 				8C40862B26CD003700C26A55 /* Info.plist */,
@@ -287,6 +288,8 @@
 		8C40864D26CD00F100C26A55 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8C76855628BF4E70004FF44E /* PlaceholderTextView */,
+				8CEA832828474B0F00E162BD /* ProgressHUD */,
 				8C13D68527B4A4CE00C30C66 /* Controller */,
 			);
 			path = Common;
@@ -300,12 +303,12 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		8C709B882845DCF40030B2A3 /* Tools */ = {
+		8C76855628BF4E70004FF44E /* PlaceholderTextView */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA832828474B0F00E162BD /* ProgressHUD */,
+				8C76855728BF4EC4004FF44E /* PlaceholderTextView.swift */,
 			);
-			path = Tools;
+			path = PlaceholderTextView;
 			sourceTree = "<group>";
 		};
 		8CDBED22283F565D009650CF /* Occupiable */ = {
@@ -904,6 +907,7 @@
 				8CEDA7FA28362A2C004BC3AC /* UIViewController+Modal.swift in Sources */,
 				8CEDA7EB28362A2C004BC3AC /* IDCardValidator.swift in Sources */,
 				8C4086E126CE5C7800C26A55 /* BackWebviewController.swift in Sources */,
+				8C76855828BF4EC4004FF44E /* PlaceholderTextView.swift in Sources */,
 				8CEDA7F928362A2C004BC3AC /* UIDevice+Idiom.swift in Sources */,
 				8CEDA7F828362A2C004BC3AC /* UIView+Chain.swift in Sources */,
 				8C40865926CD039A00C26A55 /* NavigationController.swift in Sources */,
