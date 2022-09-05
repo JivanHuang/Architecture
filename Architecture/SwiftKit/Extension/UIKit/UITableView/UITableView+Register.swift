@@ -14,13 +14,25 @@ public extension UITableView {
         register(nib, forCellReuseIdentifier: className)
     }
 
-    func registerClassFromClass<T: UITableViewCell>(type: T.Type) {
+    func registerNibFromHeaderFooterViewClass<T: UITableViewHeaderFooterView>(type: T.Type) {
         let className = T.className
-        register(T.self, forCellReuseIdentifier: className)
+        let nib = UINib(nibName: className, bundle: nil)
+        register(nib, forHeaderFooterViewReuseIdentifier: className)
     }
 
-    func dequeueReusableCell<T: UITableViewCell>(type: T.Type, forIndexPath indexPath: IndexPath) -> T
-    {
+    func registerClassFromClass<T: UITableViewCell>(type: T.Type) {
+        register(T.self, forCellReuseIdentifier: T.className)
+    }
+
+    func registerClassHeaderFooterViewFromClass<T: UITableViewHeaderFooterView>(type: T.Type) {
+        register(T.self, forHeaderFooterViewReuseIdentifier: T.className)
+    }
+
+    func dequeueReusableCell<T: UITableViewCell>(type: T.Type, forIndexPath indexPath: IndexPath) -> T {
         return dequeueReusableCell(withIdentifier: T.className, for: indexPath) as! T
+    }
+
+    func dequeueHeaderFooterView<T: UITableViewHeaderFooterView>(type: T.Type) -> T? {
+        dequeueReusableHeaderFooterView(withIdentifier: T.className) as? T
     }
 }
