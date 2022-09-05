@@ -85,4 +85,11 @@ public extension UIView {
         self.tintColor = tintColor
         return self
     }
+
+    /// 设置autoresizingMask
+    @discardableResult
+    func autoresizingMask(_ autoresizingMask: Bool) -> Self {
+        translatesAutoresizingMaskIntoConstraints = autoresizingMask
+        return self
+    }
 }

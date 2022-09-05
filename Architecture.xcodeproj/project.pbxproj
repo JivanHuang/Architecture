@@ -23,6 +23,8 @@
 		8C40865B26CD03AB00C26A55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40865A26CD03AB00C26A55 /* ViewController.swift */; };
 		8C4086E126CE5C7800C26A55 /* BackWebviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086DF26CE5C7800C26A55 /* BackWebviewController.swift */; };
 		8C4086E226CE5C7800C26A55 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4086E026CE5C7800C26A55 /* WebViewController.swift */; };
+		8C4246C728C59C2400F384D5 /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4246C628C59C2400F384D5 /* UICollectionView+Register.swift */; };
+		8C4246C928C59E9000F384D5 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4246C828C59E9000F384D5 /* UITableView+Register.swift */; };
 		8C4FED512844C2AF008EB945 /* Theme+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FED502844C2AF008EB945 /* Theme+Font.swift */; };
 		8C4FED532844C30B008EB945 /* Theme+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FED522844C30B008EB945 /* Theme+Color.swift */; };
 		8C76855828BF4EC4004FF44E /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76855728BF4EC4004FF44E /* PlaceholderTextView.swift */; };
@@ -115,6 +117,8 @@
 		8C40865A26CD03AB00C26A55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C4086DF26CE5C7800C26A55 /* BackWebviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackWebviewController.swift; sourceTree = "<group>"; };
 		8C4086E026CE5C7800C26A55 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		8C4246C628C59C2400F384D5 /* UICollectionView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
+		8C4246C828C59E9000F384D5 /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
 		8C4FED502844C2AF008EB945 /* Theme+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme+Font.swift"; sourceTree = "<group>"; };
 		8C4FED522844C30B008EB945 /* Theme+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme+Color.swift"; sourceTree = "<group>"; };
 		8C76855728BF4EC4004FF44E /* PlaceholderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
@@ -303,6 +307,22 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		8C4246C528C59BEF00F384D5 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				8C4246C628C59C2400F384D5 /* UICollectionView+Register.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		8C4246CA28C59E9500F384D5 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				8C4246C828C59E9000F384D5 /* UITableView+Register.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 		8C76855628BF4E70004FF44E /* PlaceholderTextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +403,8 @@
 		8CEDA7AA28362A2C004BC3AC /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				8C4246CA28C59E9500F384D5 /* UITableView */,
+				8C4246C528C59BEF00F384D5 /* UICollectionView */,
 				8C2B8142283B5D8F001D35C4 /* UIAlertController */,
 				8CEDA7B228362A2C004BC3AC /* UIApplication */,
 				8CEDA7B528362A2C004BC3AC /* UIButton */,
@@ -931,12 +953,14 @@
 				8CEDA7FC28362A2C004BC3AC /* UITextField+Chain.swift in Sources */,
 				8CEDA7E828362A2C004BC3AC /* EmailValidator.swift in Sources */,
 				8CEDA80628362A2C004BC3AC /* Float+Transform.swift in Sources */,
+				8C4246C928C59E9000F384D5 /* UITableView+Register.swift in Sources */,
 				8CEDA7EA28362A2C004BC3AC /* Validator.swift in Sources */,
 				8CEDA7F428362A2C004BC3AC /* UIButton+Chain.swift in Sources */,
 				8C4FED532844C30B008EB945 /* Theme+Color.swift in Sources */,
 				8CEDA7FF28362A2C004BC3AC /* Array+Subscript.swift in Sources */,
 				8CEDA7F228362A2C004BC3AC /* UIApplication+Window.swift in Sources */,
 				8CEDA7EC28362A2C004BC3AC /* IPAddressValidator.swift in Sources */,
+				8C4246C728C59C2400F384D5 /* UICollectionView+Register.swift in Sources */,
 				8CEDA80E28362A2C004BC3AC /* StringCoder.swift in Sources */,
 				8C2B8141283B595E001D35C4 /* UISwitch+Toggle.swift in Sources */,
 				8C40865726CD037600C26A55 /* TabBarController.swift in Sources */,
