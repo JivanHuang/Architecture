@@ -135,7 +135,14 @@ public class ProgressHUD: UIView {
     
     private var colorHUD: UIColor = .white
     private var labelStatus: UILabel?
-    private var colorStatus = UIColor.label
+    private var colorStatus: UIColor = {
+        if #available(iOS 13.0, *) {
+            return UIColor.label
+        } else {
+            return UIColor.darkText
+        }
+    }()
+
     private var fontStatus = UIFont.boldSystemFont(ofSize: 18)
     private var staticImageView: UIImageView?
     private var colorTint: UIColor = .black
@@ -242,7 +249,12 @@ public class ProgressHUD: UIView {
         if staticImageView?.superview == nil {
             toolbarHUD?.addSubview(staticImageView!)
         }
-        staticImageView?.image = staticImage?.withTintColor(colorTint, renderingMode: .alwaysTemplate)
+        if #available(iOS 13.0, *) {
+            staticImageView?.image = staticImage?.withTintColor(colorTint, renderingMode: .alwaysTemplate)
+        } else {
+            let image = staticImage?.withRenderingMode(.alwaysTemplate)
+            staticImageView?.image = image
+        }
         staticImageView?.tintColor = colorTint
         staticImageView?.contentMode = .scaleAspectFit
     }
