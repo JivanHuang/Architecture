@@ -15,6 +15,8 @@
 		8C2B8144283B5DBA001D35C4 /*  UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B8143283B5DBA001D35C4 /*  UIAlertController+Extension.swift */; };
 		8C381D3F28D2C61300FEE14B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C381D3E28D2C61200FEE14B /* Router.swift */; };
 		8C381D4128D2C96500FEE14B /* UIView+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C381D4028D2C96500FEE14B /* UIView+Container.swift */; };
+		8C381D4428D2CD8D00FEE14B /* UITextView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C381D4328D2CD8D00FEE14B /* UITextView+Chain.swift */; };
+		8C381D4628D2CF9800FEE14B /* PlaceholderTextView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C381D4528D2CF9800FEE14B /* PlaceholderTextView+Chain.swift */; };
 		8C40861E26CD003300C26A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40861D26CD003300C26A55 /* AppDelegate.swift */; };
 		8C40862726CD003700C26A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C40862626CD003700C26A55 /* Assets.xcassets */; };
 		8C40862A26CD003700C26A55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C40862826CD003700C26A55 /* LaunchScreen.storyboard */; };
@@ -104,6 +106,8 @@
 		8C2B8143283B5DBA001D35C4 /*  UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		8C381D3E28D2C61200FEE14B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		8C381D4028D2C96500FEE14B /* UIView+Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Container.swift"; sourceTree = "<group>"; };
+		8C381D4328D2CD8D00FEE14B /* UITextView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Chain.swift"; sourceTree = "<group>"; };
+		8C381D4528D2CF9800FEE14B /* PlaceholderTextView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaceholderTextView+Chain.swift"; sourceTree = "<group>"; };
 		8C40861A26CD003300C26A55 /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C40861D26CD003300C26A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C40862626CD003700C26A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -245,6 +249,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		8C381D4228D2CD7F00FEE14B /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				8C381D4328D2CD8D00FEE14B /* UITextView+Chain.swift */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
 		8C40861126CD003300C26A55 = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				8C76855728BF4EC4004FF44E /* PlaceholderTextView.swift */,
+				8C381D4528D2CF9800FEE14B /* PlaceholderTextView+Chain.swift */,
 			);
 			path = PlaceholderTextView;
 			sourceTree = "<group>";
@@ -414,6 +427,7 @@
 		8CEDA7AA28362A2C004BC3AC /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				8C381D4228D2CD7F00FEE14B /* UITextView */,
 				8C4246CA28C59E9500F384D5 /* UITableView */,
 				8C4246C528C59BEF00F384D5 /* UICollectionView */,
 				8C2B8142283B5D8F001D35C4 /* UIAlertController */,
@@ -943,6 +957,7 @@
 				8CEDA7F928362A2C004BC3AC /* UIDevice+Idiom.swift in Sources */,
 				8CEDA7F828362A2C004BC3AC /* UIView+Chain.swift in Sources */,
 				8C40865926CD039A00C26A55 /* NavigationController.swift in Sources */,
+				8C381D4428D2CD8D00FEE14B /* UITextView+Chain.swift in Sources */,
 				8CEDA7ED28362A2C004BC3AC /* CGRect+Transform.swift in Sources */,
 				8C40865B26CD03AB00C26A55 /* ViewController.swift in Sources */,
 				8CEDA80528362A2C004BC3AC /* Int+Transform.swift in Sources */,
@@ -981,6 +996,7 @@
 				8CDBED24283F571F009650CF /* Occupiable.swift in Sources */,
 				8CEDA7F628362A2C004BC3AC /* UIColor+HEX.swift in Sources */,
 				8CEDA80028362A2C004BC3AC /* Array+Index.swift in Sources */,
+				8C381D4628D2CF9800FEE14B /* PlaceholderTextView+Chain.swift in Sources */,
 				8C381D3F28D2C61300FEE14B /* Router.swift in Sources */,
 				8CEDA7EE28362A2C004BC3AC /* UIImage+Transform.swift in Sources */,
 				8C76C21227588A75008ED8D2 /* NamespaceWrapper.swift in Sources */,
