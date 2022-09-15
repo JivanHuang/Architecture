@@ -17,21 +17,23 @@ class TabBarController: UITabBarController {
 
 private extension TabBarController {
     func setupChildControllers() {
-        let home = (ViewController(), "Home", UIImage(systemName: "house"), UIImage(systemName: "house.fill"))
-
-        let square = (ViewController(), "Square", UIImage(systemName: "heart.text.square"), UIImage(systemName: "heart.text.square.fill"))
-
-        let person = (ViewController(), "Person", UIImage(systemName: "person"), UIImage(systemName: "person.fill"))
-
-        let controllers = [home, square, person]
-
-        controllers.forEach { viewController, title, image, selectedImage in
-
-            let nav = configNavigationController(viewController: viewController, title: title, image: image, selectedImage: selectedImage)
-            addChild(nav)
+        if #available(iOS 13.0, *) {
+            let home = (ViewController(), "Home", UIImage(systemName: "house"), UIImage(systemName: "house.fill"))
+            
+            let square = (ViewController(), "Square", UIImage(systemName: "heart.text.square"), UIImage(systemName: "heart.text.square.fill"))
+            
+            let person = (ViewController(), "Person", UIImage(systemName: "person"), UIImage(systemName: "person.fill"))
+            
+            let controllers = [home, square, person]
+            
+            controllers.forEach { viewController, title, image, selectedImage in
+                
+                let nav = configNavigationController(viewController: viewController, title: title, image: image, selectedImage: selectedImage)
+                addChild(nav)
+            }
         }
     }
-
+    
     func configNavigationController(viewController: ViewController, title: String?, image: UIImage?, selectedImage: UIImage?) -> NavigationController
     {
         let navigationController = NavigationController(rootViewController: viewController)

@@ -13,6 +13,8 @@
 		8C2B813E283B5798001D35C4 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B813D283B5798001D35C4 /* NSObject+ClassName.swift */; };
 		8C2B8141283B595E001D35C4 /* UISwitch+Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B8140283B595E001D35C4 /* UISwitch+Toggle.swift */; };
 		8C2B8144283B5DBA001D35C4 /*  UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B8143283B5DBA001D35C4 /*  UIAlertController+Extension.swift */; };
+		8C381D3F28D2C61300FEE14B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C381D3E28D2C61200FEE14B /* Router.swift */; };
+		8C381D4128D2C96500FEE14B /* UIView+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C381D4028D2C96500FEE14B /* UIView+Container.swift */; };
 		8C40861E26CD003300C26A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40861D26CD003300C26A55 /* AppDelegate.swift */; };
 		8C40862726CD003700C26A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C40862626CD003700C26A55 /* Assets.xcassets */; };
 		8C40862A26CD003700C26A55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C40862826CD003700C26A55 /* LaunchScreen.storyboard */; };
@@ -45,7 +47,6 @@
 		8CEDA7F028362A2C004BC3AC /* UIScreen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7AF28362A2C004BC3AC /* UIScreen+Size.swift */; };
 		8CEDA7F128362A2C004BC3AC /* UILabel+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7B128362A2C004BC3AC /* UILabel+Chain.swift */; };
 		8CEDA7F228362A2C004BC3AC /* UIApplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7B328362A2C004BC3AC /* UIApplication+Window.swift */; };
-		8CEDA7F328362A2C004BC3AC /* UIApplication+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7B428362A2C004BC3AC /* UIApplication+ViewController.swift */; };
 		8CEDA7F428362A2C004BC3AC /* UIButton+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7B628362A2C004BC3AC /* UIButton+Chain.swift */; };
 		8CEDA7F628362A2C004BC3AC /* UIColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7B928362A2C004BC3AC /* UIColor+HEX.swift */; };
 		8CEDA7F728362A2C004BC3AC /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7BA28362A2C004BC3AC /* UIColor+RGB.swift */; };
@@ -101,6 +102,8 @@
 		8C2B813D283B5798001D35C4 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		8C2B8140283B595E001D35C4 /* UISwitch+Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Toggle.swift"; sourceTree = "<group>"; };
 		8C2B8143283B5DBA001D35C4 /*  UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		8C381D3E28D2C61200FEE14B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8C381D4028D2C96500FEE14B /* UIView+Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Container.swift"; sourceTree = "<group>"; };
 		8C40861A26CD003300C26A55 /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C40861D26CD003300C26A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C40862626CD003700C26A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,7 +142,6 @@
 		8CEDA7AF28362A2C004BC3AC /* UIScreen+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Size.swift"; sourceTree = "<group>"; };
 		8CEDA7B128362A2C004BC3AC /* UILabel+Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Chain.swift"; sourceTree = "<group>"; };
 		8CEDA7B328362A2C004BC3AC /* UIApplication+Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Window.swift"; sourceTree = "<group>"; };
-		8CEDA7B428362A2C004BC3AC /* UIApplication+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+ViewController.swift"; sourceTree = "<group>"; };
 		8CEDA7B628362A2C004BC3AC /* UIButton+Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Chain.swift"; sourceTree = "<group>"; };
 		8CEDA7B928362A2C004BC3AC /* UIColor+HEX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HEX.swift"; sourceTree = "<group>"; };
 		8CEDA7BA28362A2C004BC3AC /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
@@ -233,6 +235,14 @@
 				8C2B8143283B5DBA001D35C4 /*  UIAlertController+Extension.swift */,
 			);
 			path = UIAlertController;
+			sourceTree = "<group>";
+		};
+		8C381D3D28D2C37500FEE14B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8C381D3E28D2C61200FEE14B /* Router.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		8C40861126CD003300C26A55 = {
@@ -351,6 +361,7 @@
 		8CEDA79E28362A2C004BC3AC /* SwiftKit */ = {
 			isa = PBXGroup;
 			children = (
+				8C381D3D28D2C37500FEE14B /* Utils */,
 				8CEDA7A628362A2C004BC3AC /* Extension */,
 				8CDBED22283F565D009650CF /* Occupiable */,
 				8CEDA7E128362A2C004BC3AC /* ReusableFormatters */,
@@ -451,7 +462,6 @@
 			isa = PBXGroup;
 			children = (
 				8CEDA7B328362A2C004BC3AC /* UIApplication+Window.swift */,
-				8CEDA7B428362A2C004BC3AC /* UIApplication+ViewController.swift */,
 			);
 			path = UIApplication;
 			sourceTree = "<group>";
@@ -477,6 +487,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEDA7BC28362A2C004BC3AC /* UIView+Chain.swift */,
+				8C381D4028D2C96500FEE14B /* UIView+Container.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -925,7 +936,6 @@
 				8CEDA7FD28362A2C004BC3AC /* UserDefaults+Codable.swift in Sources */,
 				8C2B813E283B5798001D35C4 /* NSObject+ClassName.swift in Sources */,
 				8CEDA7F028362A2C004BC3AC /* UIScreen+Size.swift in Sources */,
-				8CEDA7F328362A2C004BC3AC /* UIApplication+ViewController.swift in Sources */,
 				8CEDA7FA28362A2C004BC3AC /* UIViewController+Modal.swift in Sources */,
 				8CEDA7EB28362A2C004BC3AC /* IDCardValidator.swift in Sources */,
 				8C4086E126CE5C7800C26A55 /* BackWebviewController.swift in Sources */,
@@ -943,6 +953,7 @@
 				8CEDA80328362A2C004BC3AC /* URL+Query.swift in Sources */,
 				8C2B8144283B5DBA001D35C4 /*  UIAlertController+Extension.swift in Sources */,
 				8CEDA7F128362A2C004BC3AC /* UILabel+Chain.swift in Sources */,
+				8C381D4128D2C96500FEE14B /* UIView+Container.swift in Sources */,
 				8CEDA80D28362A2C004BC3AC /* Base64StringCoder.swift in Sources */,
 				8C9F7B72283E0E9D0031BD6E /* UIControl+Closure.swift in Sources */,
 				8CEDA80128362A2C004BC3AC /* Date+Format.swift in Sources */,
@@ -970,6 +981,7 @@
 				8CDBED24283F571F009650CF /* Occupiable.swift in Sources */,
 				8CEDA7F628362A2C004BC3AC /* UIColor+HEX.swift in Sources */,
 				8CEDA80028362A2C004BC3AC /* Array+Index.swift in Sources */,
+				8C381D3F28D2C61300FEE14B /* Router.swift in Sources */,
 				8CEDA7EE28362A2C004BC3AC /* UIImage+Transform.swift in Sources */,
 				8C76C21227588A75008ED8D2 /* NamespaceWrapper.swift in Sources */,
 				8CEDA80B28362A2C004BC3AC /* ReusableFormatters.swift in Sources */,
