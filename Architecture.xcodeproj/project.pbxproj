@@ -11,6 +11,7 @@
 		86EA86CA54275E4D9458F2B8 /* Pods_ArchitectureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331F87846DB28FB3081BB356 /* Pods_ArchitectureTests.framework */; };
 		8C094B0328DDABAD0041A3C0 /* UISegmentedControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C094B0228DDABAD0041A3C0 /* UISegmentedControlExtension.swift */; };
 		8C094B0728DDAC4F0041A3C0 /* NSPredicateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C094B0628DDAC4F0041A3C0 /* NSPredicateExtensions.swift */; };
+		8C094B0A28DDB5C30041A3C0 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C094B0928DDB5C30041A3C0 /* DataExtensions.swift */; };
 		8C2B813B283B3155001D35C4 /* MD5StringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B813A283B3155001D35C4 /* MD5StringEncoder.swift */; };
 		8C2B813E283B5798001D35C4 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B813D283B5798001D35C4 /* NSObject+ClassName.swift */; };
 		8C2B8141283B595E001D35C4 /* UISwitch+Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B8140283B595E001D35C4 /* UISwitch+Toggle.swift */; };
@@ -100,6 +101,7 @@
 		75A92A49EF96754FC39951D8 /* Pods-Architecture-ArchitectureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture-ArchitectureUITests.debug.xcconfig"; path = "Target Support Files/Pods-Architecture-ArchitectureUITests/Pods-Architecture-ArchitectureUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C094B0228DDABAD0041A3C0 /* UISegmentedControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlExtension.swift; sourceTree = "<group>"; };
 		8C094B0628DDAC4F0041A3C0 /* NSPredicateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPredicateExtensions.swift; sourceTree = "<group>"; };
+		8C094B0928DDB5C30041A3C0 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
 		8C2B813A283B3155001D35C4 /* MD5StringEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5StringEncoder.swift; sourceTree = "<group>"; };
 		8C2B813D283B5798001D35C4 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		8C2B8140283B595E001D35C4 /* UISwitch+Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Toggle.swift"; sourceTree = "<group>"; };
@@ -215,6 +217,14 @@
 				8C094B0628DDAC4F0041A3C0 /* NSPredicateExtensions.swift */,
 			);
 			path = NSPredicate;
+			sourceTree = "<group>";
+		};
+		8C094B0828DDB5B70041A3C0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8C094B0928DDB5C30041A3C0 /* DataExtensions.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		8C13D68527B4A4CE00C30C66 /* Controller */ = {
@@ -554,6 +564,7 @@
 		8CEDA7C528362A2C004BC3AC /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				8C094B0828DDB5B70041A3C0 /* Data */,
 				8C094B0528DDAC3A0041A3C0 /* NSPredicate */,
 				8CEDA7CA28362A2C004BC3AC /* Array */,
 				8CEDA7C828362A2C004BC3AC /* Collection */,
@@ -944,6 +955,7 @@
 				8C2B813E283B5798001D35C4 /* NSObject+ClassName.swift in Sources */,
 				8CEDA7F028362A2C004BC3AC /* UIScreen+Size.swift in Sources */,
 				8CEDA7FA28362A2C004BC3AC /* UIViewController+Modal.swift in Sources */,
+				8C094B0A28DDB5C30041A3C0 /* DataExtensions.swift in Sources */,
 				8CEDA7EB28362A2C004BC3AC /* IDCardValidator.swift in Sources */,
 				8C4086E126CE5C7800C26A55 /* BackWebviewController.swift in Sources */,
 				8C76855828BF4EC4004FF44E /* PlaceholderTextView.swift in Sources */,
