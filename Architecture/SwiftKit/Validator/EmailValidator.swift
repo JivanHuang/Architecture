@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public class EmailValidator: Validator {
@@ -16,3 +17,4 @@ public class EmailValidator: Validator {
         return predicate.evaluate(with: string)
     }
 }
+#endif

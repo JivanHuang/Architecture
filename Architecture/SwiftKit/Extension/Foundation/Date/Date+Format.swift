@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public extension Date {
@@ -32,3 +33,4 @@ public extension Date {
         return formatter.string(from: self as Date)
     }
 }
+#endif

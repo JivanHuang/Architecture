@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 /**
  中国电信号段为：133、149、153、173、177、180、181、189、199。
@@ -22,3 +23,4 @@ public class PhoneNumberValidator: Validator {
         return predicate.evaluate(with: string)
     }
 }
+#endif

@@ -5,6 +5,8 @@
 //  Created by Jivan on 2022/9/5.
 //
 
+#if canImport(UIKit) && !os(watchOS)
+
 import UIKit
 
 public extension UICollectionView {
@@ -40,3 +42,5 @@ public extension UICollectionView {
         dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: T.className, for: indexPath) as! T
     }
 }
+
+#endif

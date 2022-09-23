@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public extension Array where Element: Equatable {
@@ -27,3 +28,4 @@ public extension Array where Element: Equatable {
         indexes(of: item).last
     }
 }
+#endif

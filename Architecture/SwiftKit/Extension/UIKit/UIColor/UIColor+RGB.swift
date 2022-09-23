@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public extension UIColor {
@@ -49,3 +50,5 @@ public extension UIColor {
         return (red, green, blue)
     }
 }
+
+#endif

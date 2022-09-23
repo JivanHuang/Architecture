@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public class IDCardValidator: Validator {
@@ -17,3 +18,5 @@ public class IDCardValidator: Validator {
         return predicate.evaluate(with: string)
     }
 }
+
+#endif

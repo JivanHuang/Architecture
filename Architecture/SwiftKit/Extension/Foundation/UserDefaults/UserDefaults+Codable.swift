@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public extension UserDefaults {
@@ -19,3 +20,4 @@ public extension UserDefaults {
         set(data, forKey: key)
     }
 }
+#endif

@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public extension String {
@@ -21,3 +22,4 @@ public extension String {
         return self
     }
 }
+#endif

@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/18.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public extension UIControl {
@@ -38,3 +39,4 @@ public extension UIControl {
         return self
     }
 }
+#endif

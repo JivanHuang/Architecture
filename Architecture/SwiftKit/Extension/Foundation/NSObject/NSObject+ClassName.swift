@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/23.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 #if os(iOS) || os(tvOS)
@@ -18,5 +19,7 @@ public extension NSObject {
         return String(describing: self)
     }
 }
+
+#endif
 
 #endif

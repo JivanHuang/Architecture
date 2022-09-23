@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public extension Array {
@@ -12,3 +13,4 @@ public extension Array {
         indices.contains(index) ? self[index] : nil
     }
 }
+#endif

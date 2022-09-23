@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/18.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public extension Double {
@@ -16,3 +17,4 @@ public extension Double {
         return formatter.string(from: self as NSNumber)!
     }
 }
+#endif

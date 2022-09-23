@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/25.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public extension UIControl {
@@ -47,3 +48,4 @@ private class ClosureSleeve {
         attachedTo.unlisten(sleeve: self)
     }
 }
+#endif

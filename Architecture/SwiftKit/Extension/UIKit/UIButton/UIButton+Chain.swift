@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public extension UIButton {
@@ -111,3 +112,5 @@ public extension UIButton {
         return self
     }
 }
+
+#endif

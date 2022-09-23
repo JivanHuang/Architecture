@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public extension UIViewController {
@@ -20,3 +21,4 @@ public extension UIViewController {
             tabBarController?.presentingViewController is UITabBarController
     }
 }
+#endif

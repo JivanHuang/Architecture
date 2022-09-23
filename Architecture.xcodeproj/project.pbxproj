@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		45B61A93448E7A7ADB4D974C /* Pods_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5CF12118179EB516553528 /* Pods_Architecture.framework */; };
 		86EA86CA54275E4D9458F2B8 /* Pods_ArchitectureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331F87846DB28FB3081BB356 /* Pods_ArchitectureTests.framework */; };
+		8C094B0328DDABAD0041A3C0 /* UISegmentedControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C094B0228DDABAD0041A3C0 /* UISegmentedControlExtension.swift */; };
+		8C094B0728DDAC4F0041A3C0 /* NSPredicateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C094B0628DDAC4F0041A3C0 /* NSPredicateExtensions.swift */; };
 		8C2B813B283B3155001D35C4 /* MD5StringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B813A283B3155001D35C4 /* MD5StringEncoder.swift */; };
 		8C2B813E283B5798001D35C4 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B813D283B5798001D35C4 /* NSObject+ClassName.swift */; };
 		8C2B8141283B595E001D35C4 /* UISwitch+Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B8140283B595E001D35C4 /* UISwitch+Toggle.swift */; };
@@ -62,7 +64,6 @@
 		8CEDA7FF28362A2C004BC3AC /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7CB28362A2C004BC3AC /* Array+Subscript.swift */; };
 		8CEDA80028362A2C004BC3AC /* Array+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7CC28362A2C004BC3AC /* Array+Index.swift */; };
 		8CEDA80128362A2C004BC3AC /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7CE28362A2C004BC3AC /* Date+Format.swift */; };
-		8CEDA80228362A2C004BC3AC /* Bundle+BundleInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7D028362A2C004BC3AC /* Bundle+BundleInformation.swift */; };
 		8CEDA80328362A2C004BC3AC /* URL+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7D228362A2C004BC3AC /* URL+Query.swift */; };
 		8CEDA80528362A2C004BC3AC /* Int+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7D628362A2C004BC3AC /* Int+Transform.swift */; };
 		8CEDA80628362A2C004BC3AC /* Float+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7D828362A2C004BC3AC /* Float+Transform.swift */; };
@@ -100,6 +101,8 @@
 		331F87846DB28FB3081BB356 /* Pods_ArchitectureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArchitectureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7176178609C383134D9D2247 /* Pods-Architecture-ArchitectureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture-ArchitectureUITests.release.xcconfig"; path = "Target Support Files/Pods-Architecture-ArchitectureUITests/Pods-Architecture-ArchitectureUITests.release.xcconfig"; sourceTree = "<group>"; };
 		75A92A49EF96754FC39951D8 /* Pods-Architecture-ArchitectureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture-ArchitectureUITests.debug.xcconfig"; path = "Target Support Files/Pods-Architecture-ArchitectureUITests/Pods-Architecture-ArchitectureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C094B0228DDABAD0041A3C0 /* UISegmentedControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlExtension.swift; sourceTree = "<group>"; };
+		8C094B0628DDAC4F0041A3C0 /* NSPredicateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPredicateExtensions.swift; sourceTree = "<group>"; };
 		8C2B813A283B3155001D35C4 /* MD5StringEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5StringEncoder.swift; sourceTree = "<group>"; };
 		8C2B813D283B5798001D35C4 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		8C2B8140283B595E001D35C4 /* UISwitch+Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Toggle.swift"; sourceTree = "<group>"; };
@@ -159,7 +162,6 @@
 		8CEDA7CB28362A2C004BC3AC /* Array+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Subscript.swift"; sourceTree = "<group>"; };
 		8CEDA7CC28362A2C004BC3AC /* Array+Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Index.swift"; sourceTree = "<group>"; };
 		8CEDA7CE28362A2C004BC3AC /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
-		8CEDA7D028362A2C004BC3AC /* Bundle+BundleInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+BundleInformation.swift"; sourceTree = "<group>"; };
 		8CEDA7D228362A2C004BC3AC /* URL+Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Query.swift"; sourceTree = "<group>"; };
 		8CEDA7D628362A2C004BC3AC /* Int+Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Transform.swift"; sourceTree = "<group>"; };
 		8CEDA7D828362A2C004BC3AC /* Float+Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Transform.swift"; sourceTree = "<group>"; };
@@ -205,6 +207,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C094B0428DDABD30041A3C0 /* UISegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				8C094B0228DDABAD0041A3C0 /* UISegmentedControlExtension.swift */,
+			);
+			path = UISegmentedControl;
+			sourceTree = "<group>";
+		};
+		8C094B0528DDAC3A0041A3C0 /* NSPredicate */ = {
+			isa = PBXGroup;
+			children = (
+				8C094B0628DDAC4F0041A3C0 /* NSPredicateExtensions.swift */,
+			);
+			path = NSPredicate;
+			sourceTree = "<group>";
+		};
 		8C13D68527B4A4CE00C30C66 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +445,7 @@
 		8CEDA7AA28362A2C004BC3AC /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				8C094B0428DDABD30041A3C0 /* UISegmentedControl */,
 				8C381D4228D2CD7F00FEE14B /* UITextView */,
 				8C4246CA28C59E9500F384D5 /* UITableView */,
 				8C4246C528C59BEF00F384D5 /* UICollectionView */,
@@ -542,8 +561,8 @@
 		8CEDA7C528362A2C004BC3AC /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				8C094B0528DDAC3A0041A3C0 /* NSPredicate */,
 				8CEDA7CA28362A2C004BC3AC /* Array */,
-				8CEDA7CF28362A2C004BC3AC /* Bundle */,
 				8CEDA7C828362A2C004BC3AC /* Collection */,
 				8CEDA7CD28362A2C004BC3AC /* Date */,
 				8CEDA7D928362A2C004BC3AC /* Double */,
@@ -588,14 +607,6 @@
 				8CEDA7CE28362A2C004BC3AC /* Date+Format.swift */,
 			);
 			path = Date;
-			sourceTree = "<group>";
-		};
-		8CEDA7CF28362A2C004BC3AC /* Bundle */ = {
-			isa = PBXGroup;
-			children = (
-				8CEDA7D028362A2C004BC3AC /* Bundle+BundleInformation.swift */,
-			);
-			path = Bundle;
 			sourceTree = "<group>";
 		};
 		8CEDA7D128362A2C004BC3AC /* URL */ = {
@@ -791,7 +802,7 @@
 				};
 			};
 			buildConfigurationList = 8C40861526CD003300C26A55 /* Build configuration list for PBXProject "Architecture" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -964,17 +975,18 @@
 				8C4086E226CE5C7800C26A55 /* WebViewController.swift in Sources */,
 				8CEDA80928362A2C004BC3AC /* String+Transform.swift in Sources */,
 				8CEDA80728362A2C004BC3AC /* Double+Transform.swift in Sources */,
+				8C094B0328DDABAD0041A3C0 /* UISegmentedControlExtension.swift in Sources */,
 				8C2B813B283B3155001D35C4 /* MD5StringEncoder.swift in Sources */,
 				8CEDA80328362A2C004BC3AC /* URL+Query.swift in Sources */,
 				8C2B8144283B5DBA001D35C4 /*  UIAlertController+Extension.swift in Sources */,
 				8CEDA7F128362A2C004BC3AC /* UILabel+Chain.swift in Sources */,
 				8C381D4128D2C96500FEE14B /* UIView+Container.swift in Sources */,
 				8CEDA80D28362A2C004BC3AC /* Base64StringCoder.swift in Sources */,
+				8C094B0728DDAC4F0041A3C0 /* NSPredicateExtensions.swift in Sources */,
 				8C9F7B72283E0E9D0031BD6E /* UIControl+Closure.swift in Sources */,
 				8CEDA80128362A2C004BC3AC /* Date+Format.swift in Sources */,
 				8CEDA80C28362A2C004BC3AC /* Theme.swift in Sources */,
 				8CEDA7EF28362A2C004BC3AC /* UIImage+Color.swift in Sources */,
-				8CEDA80228362A2C004BC3AC /* Bundle+BundleInformation.swift in Sources */,
 				8CEA832B28474B0F00E162BD /* ProgressHUD.swift in Sources */,
 				8CEDA7FC28362A2C004BC3AC /* UITextField+Chain.swift in Sources */,
 				8CEDA7E828362A2C004BC3AC /* EmailValidator.swift in Sources */,

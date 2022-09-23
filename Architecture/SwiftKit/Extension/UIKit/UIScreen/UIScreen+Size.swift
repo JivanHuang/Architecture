@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/16.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public extension UIScreen {
@@ -57,3 +58,5 @@ public extension UIScreen {
 func autoWidth(_ width: CGFloat) -> CGFloat {
     return CGFloat(ceilf(Float(width * UIScreen.main.ratio)))
 }
+
+#endif

@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public extension URL {
@@ -58,3 +59,5 @@ private extension Dictionary where Key == String, Value == String {
         return parameters.joined(separator: "&")
     }
 }
+
+#endif

@@ -5,6 +5,8 @@
 //  Created by Jivan on 2022/9/15.
 //
 
+#if canImport(UIKit) && !os(watchOS)
+
 import UIKit
 
 public extension UITextView {
@@ -78,3 +80,5 @@ public extension UITextView {
         return self
     }
 }
+
+#endif

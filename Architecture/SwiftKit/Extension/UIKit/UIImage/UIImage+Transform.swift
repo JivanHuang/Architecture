@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public extension UIImage {
@@ -118,3 +119,4 @@ public extension UIImage {
         return UIImage(cgImage: cgImage)
     }
 }
+#endif

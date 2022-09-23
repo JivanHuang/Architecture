@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public extension UIView {
@@ -93,3 +94,4 @@ public extension UIView {
         return self
     }
 }
+#endif

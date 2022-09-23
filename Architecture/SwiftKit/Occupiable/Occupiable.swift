@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/26.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public protocol Occupiable {
@@ -37,3 +38,5 @@ extension String: Occupiable {}
 extension Array: Occupiable {}
 extension Dictionary: Occupiable {}
 extension Set: Occupiable {}
+
+#endif

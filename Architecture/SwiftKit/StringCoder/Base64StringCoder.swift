@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public class Base64StringCoder: StringCoder {
@@ -22,3 +23,4 @@ public class Base64StringCoder: StringCoder {
         return String(data: encodedData, encoding: .utf8)
     }
 }
+#endif

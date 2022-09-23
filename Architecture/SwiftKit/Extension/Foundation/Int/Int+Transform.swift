@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/18.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public extension Int {
@@ -24,3 +25,4 @@ public extension Int {
         Double(self)
     }
 }
+#endif

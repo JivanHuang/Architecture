@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public protocol Validator {
@@ -12,3 +13,5 @@ public protocol Validator {
 
     func validate(_ obj: Validation) -> Bool
 }
+
+#endif

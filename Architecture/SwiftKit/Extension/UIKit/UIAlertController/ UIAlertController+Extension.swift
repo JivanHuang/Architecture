@@ -5,6 +5,8 @@
 //  Created by Jivan on 2022/5/23.
 //
 
+#if canImport(UIKit) && !os(watchOS)
+
 import UIKit
 
 public extension UIAlertController {
@@ -48,3 +50,5 @@ public extension UIAlertController {
         }
     }
 }
+
+#endif

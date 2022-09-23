@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public enum SKDateFormatter {
@@ -38,3 +39,4 @@ public enum SKMassFormatter {
 public enum SKLengthFormatter {
     static let shared = LengthFormatter()
 }
+#endif

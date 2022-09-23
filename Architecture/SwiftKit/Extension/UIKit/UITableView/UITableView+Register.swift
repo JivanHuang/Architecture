@@ -5,6 +5,8 @@
 //  Created by Jivan on 2022/9/5.
 //
 
+#if canImport(UIKit) && !os(watchOS)
+
 import UIKit
 
 public extension UITableView {
@@ -36,3 +38,5 @@ public extension UITableView {
         dequeueReusableHeaderFooterView(withIdentifier: T.className) as? T
     }
 }
+
+#endif

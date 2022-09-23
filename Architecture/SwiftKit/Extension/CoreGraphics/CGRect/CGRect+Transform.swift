@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(CoreGraphics)
 import CoreGraphics
 
 public extension CGRect {
@@ -42,3 +43,5 @@ public extension CGRect {
         CGRect(origin: origin, size: size)
     }
 }
+
+#endif

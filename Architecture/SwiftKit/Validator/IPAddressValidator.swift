@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/5/17.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public class IPAddressValidator: Validator {
@@ -32,3 +33,4 @@ public class IP6AddressValidator: Validator {
         return string.withCString { cstring in inet_pton(AF_INET6, cstring, &sin6.sin6_addr) } == 1
     }
 }
+#endif

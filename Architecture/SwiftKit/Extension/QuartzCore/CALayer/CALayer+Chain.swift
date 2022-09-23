@@ -5,7 +5,8 @@
 //  Created by Jivan on 2022/5/17.
 //
 
-import UIKit
+#if canImport(QuartzCore)
+import QuartzCore
 
 public extension CALayer {
     /// 设置圆角
@@ -15,31 +16,10 @@ public extension CALayer {
         return self
     }
     
-    /// 设置背景色
-    @discardableResult
-    func backgroundColor(_ color: UIColor) -> Self {
-        backgroundColor = color.cgColor
-        return self
-    }
-    
-    /// 设置背景色 (十六进制字符串)
-    @discardableResult
-    func backgroundColor(_ hex: String) -> Self {
-        backgroundColor = UIColor.hexStringColor(hexString: hex).cgColor
-        return self
-    }
-    
     /// 设置frame
     @discardableResult
     func frame(_ frame: CGRect) -> Self {
         self.frame = frame
-        return self
-    }
-    
-    /// 添加到父视图
-    @discardableResult
-    func addTo(_ superView: UIView) -> Self {
-        superView.layer.addSublayer(self)
         return self
     }
     
@@ -64,13 +44,6 @@ public extension CALayer {
         return self
     }
     
-    /// 设置边框颜色
-    @discardableResult
-    func borderColor(_ color: UIColor) -> Self {
-        borderColor = color.cgColor
-        return self
-    }
-    
     /// 是否开启光栅化
     @discardableResult
     func shouldRasterize(_ rasterize: Bool) -> Self {
@@ -83,13 +56,6 @@ public extension CALayer {
     func rasterizationScale(_ scale: CGFloat) -> Self {
         rasterizationScale = scale
         shouldRasterize = true
-        return self
-    }
-    
-    /// 设置阴影颜色
-    @discardableResult
-    func shadowColor(_ color: UIColor) -> Self {
-        shadowColor = color.cgColor
         return self
     }
     
@@ -120,3 +86,42 @@ public extension CALayer {
         return self
     }
 }
+
+#if canImport(UIKit)
+import UIKit
+
+public extension CALayer {
+  
+    
+    /// 设置背景色
+    @discardableResult
+    func backgroundColor(_ color: UIColor) -> Self {
+        backgroundColor = color.cgColor
+        return self
+    }
+    
+    /// 添加到父视图
+    @discardableResult
+    func addTo(_ superView: UIView) -> Self {
+        superView.layer.addSublayer(self)
+        return self
+    }
+    
+    /// 设置边框颜色
+    @discardableResult
+    func borderColor(_ color: UIColor) -> Self {
+        borderColor = color.cgColor
+        return self
+    }
+    
+    /// 设置阴影颜色
+    @discardableResult
+    func shadowColor(_ color: UIColor) -> Self {
+        shadowColor = color.cgColor
+        return self
+    }
+}
+
+#endif
+
+#endif

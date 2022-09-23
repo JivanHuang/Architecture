@@ -5,8 +5,11 @@
 //  Created by Jivan on 2022/5/23.
 //
 
-import CommonCrypto
+#if canImport(Foundation)
 import Foundation
+#if canImport(CommonCrypto)
+import CommonCrypto
+
 // MD5 加密已经不在安全
 public class MD5StringEncoder: StringEncoder {
     public init() {}
@@ -25,3 +28,7 @@ public class MD5StringEncoder: StringEncoder {
         return hash
     }
 }
+
+#endif
+
+#endif
