@@ -5,6 +5,7 @@
 //  Created by Jivan on 2022/9/15.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public struct Router {}
@@ -27,3 +28,4 @@ public extension Router {
         return viewcontroller
     }
 }
+#endif
