@@ -32,6 +32,11 @@
 		8C4246C728C59C2400F384D5 /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4246C628C59C2400F384D5 /* UICollectionView+Register.swift */; };
 		8C4246C928C59E9000F384D5 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4246C828C59E9000F384D5 /* UITableView+Register.swift */; };
 		8C760DE428E4154E00A29F77 /* UIViewController+TopMostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C760DE328E4154E00A29F77 /* UIViewController+TopMostViewController.swift */; };
+		8C760DE728E4318B00A29F77 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C760DE528E4318B00A29F77 /* UIFontExtensions.swift */; };
+		8C760DE828E4318B00A29F77 /* UIBarButtonItemExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C760DE628E4318B00A29F77 /* UIBarButtonItemExtensions.swift */; };
+		8C760DEA28E4319700A29F77 /* UISearchBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C760DE928E4319700A29F77 /* UISearchBarExtensions.swift */; };
+		8C760DEC28E4319F00A29F77 /* UIStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C760DEB28E4319F00A29F77 /* UIStoryboardExtensions.swift */; };
+		8C760DF328E4330000A29F77 /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C760DF228E4330000A29F77 /* UINavigationControllerExtensions.swift */; };
 		8C76855828BF4EC4004FF44E /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76855728BF4EC4004FF44E /* PlaceholderTextView.swift */; };
 		8C76C21227588A75008ED8D2 /* NamespaceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76C21127588A75008ED8D2 /* NamespaceWrapper.swift */; };
 		8C9F7B72283E0E9D0031BD6E /* UIControl+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */; };
@@ -127,6 +132,11 @@
 		8C4246C628C59C2400F384D5 /* UICollectionView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
 		8C4246C828C59E9000F384D5 /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
 		8C760DE328E4154E00A29F77 /* UIViewController+TopMostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopMostViewController.swift"; sourceTree = "<group>"; };
+		8C760DE528E4318B00A29F77 /* UIFontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		8C760DE628E4318B00A29F77 /* UIBarButtonItemExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtensions.swift; sourceTree = "<group>"; };
+		8C760DE928E4319700A29F77 /* UISearchBarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBarExtensions.swift; sourceTree = "<group>"; };
+		8C760DEB28E4319F00A29F77 /* UIStoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtensions.swift; sourceTree = "<group>"; };
+		8C760DF228E4330000A29F77 /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
 		8C76855728BF4EC4004FF44E /* PlaceholderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
 		8C76C21127588A75008ED8D2 /* NamespaceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamespaceWrapper.swift; sourceTree = "<group>"; };
 		8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Closure.swift"; sourceTree = "<group>"; };
@@ -357,6 +367,46 @@
 			path = UITableView;
 			sourceTree = "<group>";
 		};
+		8C760DED28E4326300A29F77 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				8C760DE528E4318B00A29F77 /* UIFontExtensions.swift */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		8C760DEE28E4326D00A29F77 /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				8C760DE928E4319700A29F77 /* UISearchBarExtensions.swift */,
+			);
+			path = UISearchBar;
+			sourceTree = "<group>";
+		};
+		8C760DEF28E4327A00A29F77 /* UIStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				8C760DEB28E4319F00A29F77 /* UIStoryboardExtensions.swift */,
+			);
+			path = UIStoryboard;
+			sourceTree = "<group>";
+		};
+		8C760DF028E4328400A29F77 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				8C760DE628E4318B00A29F77 /* UIBarButtonItemExtensions.swift */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
+		8C760DF128E432F800A29F77 /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				8C760DF228E4330000A29F77 /* UINavigationControllerExtensions.swift */,
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
 		8C76855628BF4E70004FF44E /* PlaceholderTextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,21 +487,26 @@
 		8CEDA7AA28362A2C004BC3AC /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				8C094B0428DDABD30041A3C0 /* UISegmentedControl */,
-				8C381D4228D2CD7F00FEE14B /* UITextView */,
-				8C4246CA28C59E9500F384D5 /* UITableView */,
-				8C4246C528C59BEF00F384D5 /* UICollectionView */,
+				8C760DF128E432F800A29F77 /* UINavigationController */,
 				8C2B8142283B5D8F001D35C4 /* UIAlertController */,
 				8CEDA7B228362A2C004BC3AC /* UIApplication */,
+				8C760DF028E4328400A29F77 /* UIBarButtonItem */,
 				8CEDA7B528362A2C004BC3AC /* UIButton */,
+				8C4246C528C59BEF00F384D5 /* UICollectionView */,
 				8CEDA7B728362A2C004BC3AC /* UIColor */,
 				8CEDA7C128362A2C004BC3AC /* UIControl */,
 				8CEDA7BD28362A2C004BC3AC /* UIDevice */,
+				8C760DED28E4326300A29F77 /* UIFont */,
 				8CEDA7AB28362A2C004BC3AC /* UIImage */,
 				8CEDA7B028362A2C004BC3AC /* UILabel */,
 				8CEDA7AE28362A2C004BC3AC /* UIScreen */,
+				8C760DEE28E4326D00A29F77 /* UISearchBar */,
+				8C094B0428DDABD30041A3C0 /* UISegmentedControl */,
+				8C760DEF28E4327A00A29F77 /* UIStoryboard */,
 				8C2B813F283B592A001D35C4 /* UISwitch */,
+				8C4246CA28C59E9500F384D5 /* UITableView */,
 				8CEDA7C328362A2C004BC3AC /* UITextField */,
+				8C381D4228D2CD7F00FEE14B /* UITextView */,
 				8CEDA7BB28362A2C004BC3AC /* UIView */,
 				8CEDA7BF28362A2C004BC3AC /* UIViewController */,
 			);
@@ -943,6 +998,7 @@
 				8CEDA7FD28362A2C004BC3AC /* UserDefaults+Codable.swift in Sources */,
 				8C2B813E283B5798001D35C4 /* NSObject+ClassName.swift in Sources */,
 				8CEDA7F028362A2C004BC3AC /* UIScreen+Size.swift in Sources */,
+				8C760DE828E4318B00A29F77 /* UIBarButtonItemExtensions.swift in Sources */,
 				8CEDA7FA28362A2C004BC3AC /* UIViewController+Modal.swift in Sources */,
 				8C094B0A28DDB5C30041A3C0 /* DataExtensions.swift in Sources */,
 				8CEDA7EB28362A2C004BC3AC /* IDCardValidator.swift in Sources */,
@@ -957,6 +1013,7 @@
 				8CEDA80528362A2C004BC3AC /* Int+Transform.swift in Sources */,
 				8C4086E226CE5C7800C26A55 /* WebViewController.swift in Sources */,
 				8CEDA80928362A2C004BC3AC /* String+Transform.swift in Sources */,
+				8C760DEA28E4319700A29F77 /* UISearchBarExtensions.swift in Sources */,
 				8CEDA80728362A2C004BC3AC /* Double+Transform.swift in Sources */,
 				8C094B0328DDABAD0041A3C0 /* UISegmentedControlExtension.swift in Sources */,
 				8C2B813B283B3155001D35C4 /* MD5StringEncoder.swift in Sources */,
@@ -977,6 +1034,7 @@
 				8CEDA7EA28362A2C004BC3AC /* Validator.swift in Sources */,
 				8CEDA7F428362A2C004BC3AC /* UIButton+Chain.swift in Sources */,
 				8CEDA7FF28362A2C004BC3AC /* Array+Subscript.swift in Sources */,
+				8C760DEC28E4319F00A29F77 /* UIStoryboardExtensions.swift in Sources */,
 				8CEDA7F228362A2C004BC3AC /* UIApplication+Window.swift in Sources */,
 				8CEDA7EC28362A2C004BC3AC /* IPAddressValidator.swift in Sources */,
 				8C4246C728C59C2400F384D5 /* UICollectionView+Register.swift in Sources */,
@@ -985,6 +1043,8 @@
 				8C40865726CD037600C26A55 /* TabBarController.swift in Sources */,
 				8CEDA7FB28362A2C004BC3AC /* UIControl+Chain.swift in Sources */,
 				8CEDA7F728362A2C004BC3AC /* UIColor+RGB.swift in Sources */,
+				8C760DF328E4330000A29F77 /* UINavigationControllerExtensions.swift in Sources */,
+				8C760DE728E4318B00A29F77 /* UIFontExtensions.swift in Sources */,
 				8CDBED26283F596A009650CF /* CALayer+Animation.swift in Sources */,
 				8CDBED24283F571F009650CF /* Occupiable.swift in Sources */,
 				8CEDA7F628362A2C004BC3AC /* UIColor+HEX.swift in Sources */,
