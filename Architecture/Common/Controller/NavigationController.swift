@@ -48,8 +48,8 @@ extension NavigationController: UINavigationControllerDelegate {
 
 private extension NavigationController {
     func setupNavgationAppearance() {
-        let backgroudImage = UIImage.image(color: .white)
-        let shadowImage = UIImage.image(color: .clear)
+        let backgroudImage = UIImage(color: .white)
+        let shadowImage = UIImage(color: .clear)
         let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .semibold)]
         if #available(iOS 15.0, *) {
             let appearance = UINavigationBarAppearance()

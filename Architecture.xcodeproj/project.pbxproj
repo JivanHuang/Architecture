@@ -46,7 +46,6 @@
 		8CEDA7EC28362A2C004BC3AC /* IPAddressValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7A528362A2C004BC3AC /* IPAddressValidator.swift */; };
 		8CEDA7ED28362A2C004BC3AC /* CGRect+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7A928362A2C004BC3AC /* CGRect+Transform.swift */; };
 		8CEDA7EE28362A2C004BC3AC /* UIImage+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7AC28362A2C004BC3AC /* UIImage+Transform.swift */; };
-		8CEDA7EF28362A2C004BC3AC /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7AD28362A2C004BC3AC /* UIImage+Color.swift */; };
 		8CEDA7F028362A2C004BC3AC /* UIScreen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7AF28362A2C004BC3AC /* UIScreen+Size.swift */; };
 		8CEDA7F128362A2C004BC3AC /* UILabel+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7B128362A2C004BC3AC /* UILabel+Chain.swift */; };
 		8CEDA7F228362A2C004BC3AC /* UIApplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDA7B328362A2C004BC3AC /* UIApplication+Window.swift */; };
@@ -142,7 +141,6 @@
 		8CEDA7A528362A2C004BC3AC /* IPAddressValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressValidator.swift; sourceTree = "<group>"; };
 		8CEDA7A928362A2C004BC3AC /* CGRect+Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Transform.swift"; sourceTree = "<group>"; };
 		8CEDA7AC28362A2C004BC3AC /* UIImage+Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Transform.swift"; sourceTree = "<group>"; };
-		8CEDA7AD28362A2C004BC3AC /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		8CEDA7AF28362A2C004BC3AC /* UIScreen+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Size.swift"; sourceTree = "<group>"; };
 		8CEDA7B128362A2C004BC3AC /* UILabel+Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Chain.swift"; sourceTree = "<group>"; };
 		8CEDA7B328362A2C004BC3AC /* UIApplication+Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Window.swift"; sourceTree = "<group>"; };
@@ -464,7 +462,6 @@
 			isa = PBXGroup;
 			children = (
 				8CEDA7AC28362A2C004BC3AC /* UIImage+Transform.swift */,
-				8CEDA7AD28362A2C004BC3AC /* UIImage+Color.swift */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -971,7 +968,6 @@
 				8C094B0728DDAC4F0041A3C0 /* NSPredicateExtensions.swift in Sources */,
 				8C9F7B72283E0E9D0031BD6E /* UIControl+Closure.swift in Sources */,
 				8CEDA80128362A2C004BC3AC /* Date+Format.swift in Sources */,
-				8CEDA7EF28362A2C004BC3AC /* UIImage+Color.swift in Sources */,
 				8CEA832B28474B0F00E162BD /* ProgressHUD.swift in Sources */,
 				8CEDA7FC28362A2C004BC3AC /* UITextField+Chain.swift in Sources */,
 				8C760DE428E4154E00A29F77 /* UIViewController+TopMostViewController.swift in Sources */,

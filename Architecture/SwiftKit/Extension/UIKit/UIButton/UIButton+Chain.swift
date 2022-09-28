@@ -73,7 +73,7 @@ public extension UIButton {
     /// 设置图片(纯颜色的图片)
     @discardableResult
     func image(_ color: UIColor, _ size: CGSize = CGSize(width: 20.0, height: 20.0), _ state: UIControl.State = .normal) -> Self {
-        let image = UIImage.image(color: color, size: size)
+        let image = UIImage(color: color, size: size)
         setImage(image, for: state)
         return self
     }
@@ -107,7 +107,7 @@ public extension UIButton {
     /// 设置背景图片(纯颜色的图片)
     @discardableResult
     func bgImage(_ color: UIColor, _ state: UIControl.State = .normal) -> Self {
-        let image = UIImage.image(color: color)
+        let image = UIImage(color: color)
         setBackgroundImage(image, for: state)
         return self
     }

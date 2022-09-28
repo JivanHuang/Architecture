@@ -8,115 +8,289 @@
 #if canImport(UIKit)
 import UIKit
 
+// MARK: - Properties
+
 public extension UIImage {
-    /// 获取固定大小的image
-    func solidTo(size: CGSize) -> UIImage? {
-        let w = size.width
-        let h = size.height
-        if self.size.height <= self.size.width {
-            if self.size.width >= w {
-                let scaleImage = fixOrientation().scaleTo(size: CGSize(width: w, height: w * self.size.height / self.size.width))
-                return scaleImage
-            } else {
-                return fixOrientation()
-            }
-        } else {
-            if self.size.height >= h {
-                let scaleImage = fixOrientation().scaleTo(size: CGSize(width: h * self.size.width / self.size.height, height: h))
-                return scaleImage
-            } else {
-                return fixOrientation()
-            }
-        }
+    var bytesSize: Int {
+        return jpegData(compressionQuality: 1)?.count ?? 0
     }
 
-    /// 按宽高比系数：等比缩放
-    func scaleTo(scale: CGFloat) -> UIImage? {
-        let w = size.width
-        let h = size.height
-        let scaledW = w * scale
-        let scaledH = h * scale
-        UIGraphicsBeginImageContext(size)
-        draw(in: CGRect(x: 0, y: 0, width: scaledW, height: scaledH))
+    var kilobytesSize: Int {
+        return (jpegData(compressionQuality: 1)?.count ?? 0) / 1024
+    }
+
+    var original: UIImage {
+        return withRenderingMode(.alwaysOriginal)
+    }
+
+    var template: UIImage {
+        return withRenderingMode(.alwaysTemplate)
+    }
+
+    #if canImport(CoreImage)
+
+    func averageColor() -> UIColor? {
+        // https://stackoverflow.com/questions/26330924
+        guard let ciImage = ciImage ?? CIImage(image: self) else { return nil }
+
+        // CIAreaAverage returns a single-pixel image that contains the average color for a given region of an image.
+        let parameters = [kCIInputImageKey: ciImage, kCIInputExtentKey: CIVector(cgRect: ciImage.extent)]
+        guard let outputImage = CIFilter(name: "CIAreaAverage", parameters: parameters)?.outputImage else {
+            return nil
+        }
+
+        // After getting the single-pixel image from the filter extract pixel's RGBA8 data
+        var bitmap = [UInt8](repeating: 0, count: 4)
+        let workingColorSpace: Any = cgImage?.colorSpace ?? NSNull()
+        let context = CIContext(options: [.workingColorSpace: workingColorSpace])
+        context.render(outputImage,
+                       toBitmap: &bitmap,
+                       rowBytes: 4,
+                       bounds: CGRect(x: 0, y: 0, width: 1, height: 1),
+                       format: .RGBA8,
+                       colorSpace: nil)
+
+        // Convert pixel data to UIColor
+        return UIColor(red: CGFloat(bitmap[0]) / 255.0,
+                       green: CGFloat(bitmap[1]) / 255.0,
+                       blue: CGFloat(bitmap[2]) / 255.0,
+                       alpha: CGFloat(bitmap[3]) / 255.0)
+    }
+    #endif
+}
+
+// MARK: - Methods
+
+public extension UIImage {
+    func compressed(quality: CGFloat = 0.5) -> UIImage? {
+        guard let data = jpegData(compressionQuality: quality) else { return nil }
+        return UIImage(data: data)
+    }
+
+    func compressedData(quality: CGFloat = 0.5) -> Data? {
+        return jpegData(compressionQuality: quality)
+    }
+
+    func cropped(to rect: CGRect) -> UIImage {
+        guard rect.size.width <= size.width, rect.size.height <= size.height else { return self }
+        let scaledRect = rect.applying(CGAffineTransform(scaleX: scale, y: scale))
+        guard let image = cgImage?.cropping(to: scaledRect) else { return self }
+        return UIImage(cgImage: image, scale: scale, orientation: imageOrientation)
+    }
+
+    func scaled(toHeight: CGFloat, opaque: Bool = false) -> UIImage? {
+        let scale = toHeight / size.height
+        let newWidth = size.width * scale
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: newWidth, height: toHeight), opaque, self.scale)
+        draw(in: CGRect(x: 0, y: 0, width: newWidth, height: toHeight))
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return newImage
     }
 
-    /// 按指定尺寸等比缩放
-    func scaleTo(size: CGSize) -> UIImage? {
-        if cgImage == nil { return nil }
-        var w = CGFloat(cgImage!.width)
-        var h = CGFloat(cgImage!.height)
-        let verticalRadio = size.height / h
-        let horizontalRadio = size.width / w
-        var radio: CGFloat = 1
-        if verticalRadio > 1, horizontalRadio > 1 {
-            radio = verticalRadio > horizontalRadio ? horizontalRadio : verticalRadio
-        } else {
-            radio = verticalRadio < horizontalRadio ? verticalRadio : horizontalRadio
-        }
-        w = w * radio
-        h = h * radio
-        let xPos = (size.width - w) / 2
-        let yPos = (size.height - h) / 2
-        UIGraphicsBeginImageContext(size)
-        draw(in: CGRect(x: xPos, y: yPos, width: w, height: h))
-        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+    func scaled(toWidth: CGFloat, opaque: Bool = false) -> UIImage? {
+        let scale = toWidth / size.width
+        let newHeight = size.height * scale
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: toWidth, height: newHeight), opaque, self.scale)
+        draw(in: CGRect(x: 0, y: 0, width: toWidth, height: newHeight))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return scaledImage
+        return newImage
     }
 
-    /// 图片中间1*1拉伸——如气泡一般
-    func strechAsBubble() -> UIImage {
-        let top = size.height * 0.5
-        let left = size.width * 0.5
-        let bottom = size.height * 0.5
-        let right = size.width * 0.5
-        let edgeInsets = UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
-        // 拉伸
-        return resizableImage(withCapInsets: edgeInsets, resizingMode: .stretch)
+    @available(tvOS 10.0, watchOS 3.0, *)
+    func rotated(by angle: Measurement<UnitAngle>) -> UIImage? {
+        let radians = CGFloat(angle.converted(to: .radians).value)
+
+        let destRect = CGRect(origin: .zero, size: size)
+            .applying(CGAffineTransform(rotationAngle: radians))
+        let roundedDestRect = CGRect(x: destRect.origin.x.rounded(),
+                                     y: destRect.origin.y.rounded(),
+                                     width: destRect.width.rounded(),
+                                     height: destRect.height.rounded())
+
+        UIGraphicsBeginImageContextWithOptions(roundedDestRect.size, false, scale)
+        guard let contextRef = UIGraphicsGetCurrentContext() else { return nil }
+
+        contextRef.translateBy(x: roundedDestRect.width / 2, y: roundedDestRect.height / 2)
+        contextRef.rotate(by: radians)
+
+        draw(in: CGRect(origin: CGPoint(x: -size.width / 2,
+                                        y: -size.height / 2),
+                        size: size))
+
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
     }
 
-    /// 调整图像方向 避免图像有旋转
-    func fixOrientation() -> UIImage {
-        if imageOrientation == .up {
-            return self
+    func rotated(by radians: CGFloat) -> UIImage? {
+        let destRect = CGRect(origin: .zero, size: size)
+            .applying(CGAffineTransform(rotationAngle: radians))
+        let roundedDestRect = CGRect(x: destRect.origin.x.rounded(),
+                                     y: destRect.origin.y.rounded(),
+                                     width: destRect.width.rounded(),
+                                     height: destRect.height.rounded())
+
+        UIGraphicsBeginImageContextWithOptions(roundedDestRect.size, false, scale)
+        guard let contextRef = UIGraphicsGetCurrentContext() else { return nil }
+
+        contextRef.translateBy(x: roundedDestRect.width / 2, y: roundedDestRect.height / 2)
+        contextRef.rotate(by: radians)
+
+        draw(in: CGRect(origin: CGPoint(x: -size.width / 2,
+                                        y: -size.height / 2),
+                        size: size))
+
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
+    }
+
+    func filled(withColor color: UIColor) -> UIImage {
+        #if !os(watchOS)
+        if #available(tvOS 10.0, *) {
+            let format = UIGraphicsImageRendererFormat()
+            format.scale = scale
+            let renderer = UIGraphicsImageRenderer(size: size, format: format)
+            return renderer.image { context in
+                color.setFill()
+                context.fill(CGRect(origin: .zero, size: size))
+            }
         }
-        var transform = CGAffineTransform.identity
-        switch imageOrientation {
-        case .down, .downMirrored:
-            transform = transform.translatedBy(x: size.width, y: size.height)
-            transform = transform.rotated(by: .pi)
-        case .left, .leftMirrored:
-            transform = transform.translatedBy(x: size.width, y: 0)
-            transform = transform.rotated(by: .pi / 2)
-        case .right, .rightMirrored:
-            transform = transform.translatedBy(x: 0, y: size.height)
-            transform = transform.rotated(by: -.pi / 2)
-        default:
-            break
+        #endif
+
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        color.setFill()
+        guard let context = UIGraphicsGetCurrentContext() else { return self }
+
+        context.translateBy(x: 0, y: size.height)
+        context.scaleBy(x: 1.0, y: -1.0)
+        context.setBlendMode(CGBlendMode.normal)
+
+        let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+        guard let mask = cgImage else { return self }
+        context.clip(to: rect, mask: mask)
+        context.fill(rect)
+
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return newImage
+    }
+
+    func tint(_ color: UIColor, blendMode: CGBlendMode, alpha: CGFloat = 1.0) -> UIImage {
+        let drawRect = CGRect(origin: .zero, size: size)
+
+        #if !os(watchOS)
+        if #available(tvOS 10.0, *) {
+            let format = UIGraphicsImageRendererFormat()
+            format.scale = scale
+            return UIGraphicsImageRenderer(size: size, format: format).image { context in
+                color.setFill()
+                context.fill(drawRect)
+                draw(in: drawRect, blendMode: blendMode, alpha: alpha)
+            }
         }
-        switch imageOrientation {
-        case .upMirrored, .downMirrored:
-            transform = transform.translatedBy(x: size.width, y: 0)
-            transform = transform.scaledBy(x: -1, y: 1)
-        case .leftMirrored, .rightMirrored:
-            transform = transform.translatedBy(x: size.height, y: 0)
-            transform = transform.scaledBy(x: -1, y: 1)
-        default:
-            break
+        #endif
+
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        defer {
+            UIGraphicsEndImageContext()
         }
-        let ctx = CGContext(data: nil, width: Int(size.width), height: Int(size.height), bitsPerComponent: (self.cgImage?.bitsPerComponent)!, bytesPerRow: 0, space: (self.cgImage?.colorSpace)!, bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)!
-        ctx.concatenate(transform)
-        switch imageOrientation {
-        case .left, .leftMirrored, .right, .rightMirrored:
-            ctx.draw(self.cgImage!, in: CGRect(x: 0, y: 0, width: size.height, height: size.width))
-        default:
-            ctx.draw(self.cgImage!, in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        let context = UIGraphicsGetCurrentContext()
+        color.setFill()
+        context?.fill(drawRect)
+        draw(in: drawRect, blendMode: blendMode, alpha: alpha)
+        return UIGraphicsGetImageFromCurrentImageContext()!
+    }
+
+    func withBackgroundColor(_ backgroundColor: UIColor) -> UIImage {
+        #if !os(watchOS)
+        if #available(tvOS 10.0, *) {
+            let format = UIGraphicsImageRendererFormat()
+            format.scale = scale
+            return UIGraphicsImageRenderer(size: size, format: format).image { context in
+                backgroundColor.setFill()
+                context.fill(context.format.bounds)
+                draw(at: .zero)
+            }
         }
-        let cgImage: CGImage = ctx.makeImage()!
-        return UIImage(cgImage: cgImage)
+        #endif
+
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        defer { UIGraphicsEndImageContext() }
+
+        backgroundColor.setFill()
+        UIRectFill(CGRect(origin: .zero, size: size))
+        draw(at: .zero)
+
+        return UIGraphicsGetImageFromCurrentImageContext()!
+    }
+
+    func withRoundedCorners(radius: CGFloat? = nil) -> UIImage? {
+        let maxRadius = min(size.width, size.height) / 2
+        let cornerRadius: CGFloat
+        if let radius = radius, radius > 0, radius <= maxRadius {
+            cornerRadius = radius
+        } else {
+            cornerRadius = maxRadius
+        }
+
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+
+        let rect = CGRect(origin: .zero, size: size)
+        UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius).addClip()
+        draw(in: rect)
+
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+
+    func pngBase64String() -> String? {
+        return pngData()?.base64EncodedString()
+    }
+
+    func jpegBase64String(compressionQuality: CGFloat) -> String? {
+        return jpegData(compressionQuality: compressionQuality)?.base64EncodedString()
+    }
+
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+    func withAlwaysOriginalTintColor(_ color: UIColor) -> UIImage {
+        return withTintColor(color, renderingMode: .alwaysOriginal)
     }
 }
+
+// MARK: - Initializers
+
+public extension UIImage {
+    convenience init(color: UIColor, size: CGSize = .init(width: 1.0, height: 1.0)) {
+        UIGraphicsBeginImageContextWithOptions(size, false, 1)
+
+        defer {
+            UIGraphicsEndImageContext()
+        }
+
+        color.setFill()
+        UIRectFill(CGRect(origin: .zero, size: size))
+
+        guard let aCgImage = UIGraphicsGetImageFromCurrentImageContext()?.cgImage else {
+            self.init()
+            return
+        }
+
+        self.init(cgImage: aCgImage)
+    }
+
+    convenience init?(base64String: String, scale: CGFloat = 1.0) {
+        guard let data = Data(base64Encoded: base64String) else { return nil }
+        self.init(data: data, scale: scale)
+    }
+
+    convenience init?(url: URL, scale: CGFloat = 1.0) throws {
+        let data = try Data(contentsOf: url)
+        self.init(data: data, scale: scale)
+    }
+}
+
 #endif

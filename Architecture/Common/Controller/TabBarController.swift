@@ -49,12 +49,12 @@ private extension TabBarController {
         if #available(iOS 15.0, *) {
             let appearance = UITabBarAppearance()
             appearance.backgroundColor = .white
-            appearance.shadowImage = UIImage.image(color: .clear)
+            appearance.shadowImage = UIImage(color: .clear)
             tabBar.standardAppearance = appearance
             tabBar.scrollEdgeAppearance = appearance
         } else {
             tabBar.backgroundColor = .white
-            tabBar.shadowImage = UIImage.image(color: .clear)
+            tabBar.shadowImage =  UIImage(color: .clear)
         }
     }
 }
