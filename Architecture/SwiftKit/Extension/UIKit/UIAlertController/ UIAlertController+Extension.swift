@@ -34,7 +34,7 @@ public extension UIAlertController {
         UIApplication.shared.window?.rootViewController?.present(self, animated: true, completion: nil)
     }
 
-    func show(_ controller: UIViewController? = Router.topVisibleViewController(), dismiss deadline: TimeInterval? = nil) {
+    func show(_ controller: UIViewController? = UIViewController.topMost, dismiss deadline: TimeInterval? = nil) {
         guard let controller = controller else {
             return
         }
