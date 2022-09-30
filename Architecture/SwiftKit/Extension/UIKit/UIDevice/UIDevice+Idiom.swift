@@ -11,7 +11,7 @@ import UIKit
 public extension UIDevice {
     /// 判断设备是否为异形屏幕
     var isIphoneX: Bool {
-        if self.userInterfaceIdiom != .phone {
+        if userInterfaceIdiom != .phone {
             return false
         }
         guard let keyWindow = UIApplication.shared.window else { return false }
