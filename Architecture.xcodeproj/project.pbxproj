@@ -279,6 +279,19 @@
 			path = UITextView;
 			sourceTree = "<group>";
 		};
+		8C381D8728E6C0B30068D1BA /* SwiftStdlib */ = {
+			isa = PBXGroup;
+			children = (
+				8CEDA7DB28362A2C004BC3AC /* String */,
+				8CEDA7D528362A2C004BC3AC /* Int */,
+				8CEDA7D728362A2C004BC3AC /* Float */,
+				8CEDA7D928362A2C004BC3AC /* Double */,
+				8CEDA7C828362A2C004BC3AC /* Collection */,
+				8CEDA7CA28362A2C004BC3AC /* Array */,
+			);
+			path = SwiftStdlib;
+			sourceTree = "<group>";
+		};
 		8C40861126CD003300C26A55 = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +473,7 @@
 		8CEDA7A628362A2C004BC3AC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8C381D8728E6C0B30068D1BA /* SwiftStdlib */,
 				8CEDA7A728362A2C004BC3AC /* CoreGraphics */,
 				8CEDA7AA28362A2C004BC3AC /* UIKit */,
 				8CEDA7C528362A2C004BC3AC /* Foundation */,
@@ -487,7 +501,6 @@
 		8CEDA7AA28362A2C004BC3AC /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				8C760DF128E432F800A29F77 /* UINavigationController */,
 				8C2B8142283B5D8F001D35C4 /* UIAlertController */,
 				8CEDA7B228362A2C004BC3AC /* UIApplication */,
 				8C760DF028E4328400A29F77 /* UIBarButtonItem */,
@@ -499,6 +512,7 @@
 				8C760DED28E4326300A29F77 /* UIFont */,
 				8CEDA7AB28362A2C004BC3AC /* UIImage */,
 				8CEDA7B028362A2C004BC3AC /* UILabel */,
+				8C760DF128E432F800A29F77 /* UINavigationController */,
 				8CEDA7AE28362A2C004BC3AC /* UIScreen */,
 				8C760DEE28E4326D00A29F77 /* UISearchBar */,
 				8C094B0428DDABD30041A3C0 /* UISegmentedControl */,
@@ -609,15 +623,9 @@
 			isa = PBXGroup;
 			children = (
 				8C094B0828DDB5B70041A3C0 /* Data */,
-				8C094B0528DDAC3A0041A3C0 /* NSPredicate */,
-				8CEDA7CA28362A2C004BC3AC /* Array */,
-				8CEDA7C828362A2C004BC3AC /* Collection */,
 				8CEDA7CD28362A2C004BC3AC /* Date */,
-				8CEDA7D928362A2C004BC3AC /* Double */,
-				8CEDA7D728362A2C004BC3AC /* Float */,
-				8CEDA7D528362A2C004BC3AC /* Int */,
 				8C2B813C283B5778001D35C4 /* NSObject */,
-				8CEDA7DB28362A2C004BC3AC /* String */,
+				8C094B0528DDAC3A0041A3C0 /* NSPredicate */,
 				8CEDA7D128362A2C004BC3AC /* URL */,
 				8CEDA7C628362A2C004BC3AC /* UserDefaults */,
 			);

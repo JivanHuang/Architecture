@@ -7,12 +7,9 @@
 
 #if canImport(Foundation)
 import Foundation
+#endif
 
 public extension String {
-    func trimmed() -> String {
-        components(separatedBy: NSCharacterSet.whitespacesAndNewlines).joined()
-    }
-
     func truncated(limit: Int) -> String {
         if count > limit {
             var truncatedString = self[0 ..< limit]
@@ -21,5 +18,10 @@ public extension String {
         }
         return self
     }
-}
+
+#if canImport(Foundation)
+    func trimmed() -> String {
+        components(separatedBy: NSCharacterSet.whitespacesAndNewlines).joined()
+    }
 #endif
+}

@@ -5,9 +5,6 @@
 //  Created by Jivan on 2022/5/17.
 //
 
-#if canImport(Foundation)
-import Foundation
-
 @available(iOS 15.0, macOS 12.0, watchOS 8.0, tvOS 15.0, *)
 public extension Collection {
     /// 使用异步转换对集合进行压缩映射。
@@ -42,4 +39,3 @@ public extension Collection {
         return result
     }
 }
-#endif

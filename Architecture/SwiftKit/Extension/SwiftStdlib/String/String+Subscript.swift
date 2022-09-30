@@ -5,9 +5,6 @@
 //  Created by Jivan on 2022/5/17.
 //
 
-#if canImport(Foundation)
-import Foundation
-
 public extension String {
     subscript(integerIndex: Int) -> Character {
         self[index(startIndex, offsetBy: integerIndex)]
@@ -20,4 +17,3 @@ public extension String {
     }
 }
 
-#endif

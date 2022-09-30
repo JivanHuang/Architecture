@@ -1,5 +1,5 @@
 //
-//   UIAlertController+Extension.swift
+//  UIAlertController+Extension.swift
 //  Architecture
 //
 //  Created by Jivan on 2022/5/23.
@@ -31,7 +31,7 @@ public extension UIAlertController {
     }
 
     func show() {
-        UIApplication.shared.window?.rootViewController?.present(self, animated: true, completion: nil)
+        UIViewController.topMost?.present(self, animated: true, completion: nil)
     }
 
     func show(_ controller: UIViewController? = UIViewController.topMost, dismiss deadline: TimeInterval? = nil) {
