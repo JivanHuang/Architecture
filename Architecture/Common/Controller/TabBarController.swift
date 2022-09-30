@@ -20,7 +20,7 @@ private extension TabBarController {
         if #available(iOS 13.0, *) {
             let home = (ViewController(), "Home", UIImage(systemName: "house"), UIImage(systemName: "house.fill"))
             
-            let square = (ViewController(), "Square", UIImage(systemName: "heart.text.square"), UIImage(systemName: "heart.text.square.fill"))
+            let square = (ViewController(), "Heart", UIImage(systemName: "heart.text.square"), UIImage(systemName: "heart.text.square.fill"))
             
             let person = (ViewController(), "Person", UIImage(systemName: "person"), UIImage(systemName: "person.fill"))
             
@@ -38,7 +38,7 @@ private extension TabBarController {
     {
         let navigationController = NavigationController(rootViewController: viewController)
         viewController.navigationItem.title = title
-        let tabBarItem = UITabBarItem(title: title, image: image, selectedImage: selectedImage)
+        let tabBarItem = UITabBarItem(title: title, image: image, selectedImage: selectedImage?.withRenderingMode(.alwaysTemplate))
         navigationController.tabBarItem = tabBarItem
         return navigationController
     }
@@ -54,7 +54,8 @@ private extension TabBarController {
             tabBar.scrollEdgeAppearance = appearance
         } else {
             tabBar.backgroundColor = .white
-            tabBar.shadowImage =  UIImage(color: .clear)
+            tabBar.shadowImage = UIImage(color: .clear)
         }
+        tabBar.tintColor = .systemPink
     }
 }
