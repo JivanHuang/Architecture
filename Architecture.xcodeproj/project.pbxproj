@@ -40,6 +40,8 @@
 		8C76855828BF4EC4004FF44E /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76855728BF4EC4004FF44E /* PlaceholderTextView.swift */; };
 		8C76C21227588A75008ED8D2 /* NamespaceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76C21127588A75008ED8D2 /* NamespaceWrapper.swift */; };
 		8C9F7B72283E0E9D0031BD6E /* UIControl+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */; };
+		8CCA54CF28F3FE3C0051912D /* CGSize+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA54CE28F3FE3C0051912D /* CGSize+Transform.swift */; };
+		8CCA54D128F3FF390051912D /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA54D028F3FF390051912D /* CGFloatExtensions.swift */; };
 		8CDBED24283F571F009650CF /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDBED23283F571F009650CF /* Occupiable.swift */; };
 		8CDBED26283F596A009650CF /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDBED25283F5969009650CF /* CALayer+Animation.swift */; };
 		8CEA832B28474B0F00E162BD /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA832928474B0F00E162BD /* ProgressHUD.swift */; };
@@ -140,6 +142,8 @@
 		8C76855728BF4EC4004FF44E /* PlaceholderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
 		8C76C21127588A75008ED8D2 /* NamespaceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamespaceWrapper.swift; sourceTree = "<group>"; };
 		8C9F7B71283E0E9D0031BD6E /* UIControl+Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Closure.swift"; sourceTree = "<group>"; };
+		8CCA54CE28F3FE3C0051912D /* CGSize+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Transform.swift"; sourceTree = "<group>"; };
+		8CCA54D028F3FF390051912D /* CGFloatExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
 		8CDBED23283F571F009650CF /* Occupiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Occupiable.swift; sourceTree = "<group>"; };
 		8CDBED25283F5969009650CF /* CALayer+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animation.swift"; sourceTree = "<group>"; };
 		8CEA832928474B0F00E162BD /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
@@ -429,6 +433,22 @@
 			path = PlaceholderTextView;
 			sourceTree = "<group>";
 		};
+		8CCA54CD28F3FE250051912D /* CGSize */ = {
+			isa = PBXGroup;
+			children = (
+				8CCA54CE28F3FE3C0051912D /* CGSize+Transform.swift */,
+			);
+			path = CGSize;
+			sourceTree = "<group>";
+		};
+		8CCA54D228F3FF810051912D /* CGFloat */ = {
+			isa = PBXGroup;
+			children = (
+				8CCA54D028F3FF390051912D /* CGFloatExtensions.swift */,
+			);
+			path = CGFloat;
+			sourceTree = "<group>";
+		};
 		8CDBED22283F565D009650CF /* Occupiable */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,6 +505,8 @@
 		8CEDA7A728362A2C004BC3AC /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				8CCA54D228F3FF810051912D /* CGFloat */,
+				8CCA54CD28F3FE250051912D /* CGSize */,
 				8CEDA7A828362A2C004BC3AC /* CGRect */,
 			);
 			path = CoreGraphics;
@@ -1061,8 +1083,10 @@
 				8CEDA7EE28362A2C004BC3AC /* UIImage+Transform.swift in Sources */,
 				8C76C21227588A75008ED8D2 /* NamespaceWrapper.swift in Sources */,
 				8CEDA80B28362A2C004BC3AC /* ReusableFormatters.swift in Sources */,
+				8CCA54D128F3FF390051912D /* CGFloatExtensions.swift in Sources */,
 				8C40861E26CD003300C26A55 /* AppDelegate.swift in Sources */,
 				8CEDA7E928362A2C004BC3AC /* PhoneNumberValidator.swift in Sources */,
+				8CCA54CF28F3FE3C0051912D /* CGSize+Transform.swift in Sources */,
 				8CEDA7FE28362A2C004BC3AC /* Collection+Async.swift in Sources */,
 				8CEDA80828362A2C004BC3AC /* String+Subscript.swift in Sources */,
 			);
