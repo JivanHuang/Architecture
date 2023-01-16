@@ -21,4 +21,18 @@ public extension UIView {
         return nil
     }
 }
+
+public extension UIView {
+    func subviews<T>(ofType _: T.Type) -> [T] {
+        var views = [T]()
+        for subview in subviews {
+            if let view = subview as? T {
+                views.append(view)
+            } else if !subview.subviews.isEmpty {
+                views.append(contentsOf: subview.subviews(ofType: T.self))
+            }
+        }
+        return views
+    }
+}
 #endif
