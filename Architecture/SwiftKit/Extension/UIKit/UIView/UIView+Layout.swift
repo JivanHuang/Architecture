@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UIView {
-    /// translatesAutoresizingMaskIntoConstraints
+    /// 设置autoresizingMask
     @discardableResult
     func autoresizingMask(_ autoresizingMask: Bool) -> Self {
         translatesAutoresizingMaskIntoConstraints = autoresizingMask
@@ -137,8 +137,20 @@ public extension UIView {
     }
 
     @discardableResult
+    func widthAnchor(equalToConstant constant: CGFloat = 0.0) -> Self {
+        widthAnchor.constraint(equalToConstant: constant).isActive = true
+        return self
+    }
+
+    @discardableResult
     func heightAnchor(attribute: NSLayoutDimension, m multiplier: CGFloat = 1.0, constant: CGFloat = 0.0) -> Self {
         heightAnchor.constraint(equalTo: attribute, multiplier: multiplier, constant: constant).isActive = true
+        return self
+    }
+
+    @discardableResult
+    func heightAnchor(equalToConstant constant: CGFloat = 0.0) -> Self {
+        heightAnchor.constraint(equalToConstant: constant).isActive = true
         return self
     }
 }
