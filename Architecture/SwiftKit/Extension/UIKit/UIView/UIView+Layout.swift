@@ -11,6 +11,7 @@ import UIKit
 public extension UIView {
     /// 设置autoresizingMask
     @discardableResult
+    @available(iOS 6.0, *)
     func autoresizingMask(_ autoresizingMask: Bool) -> Self {
         translatesAutoresizingMaskIntoConstraints = autoresizingMask
         return self
@@ -18,55 +19,8 @@ public extension UIView {
 }
 
 // AutoLayout
+@available(iOS 9.0, *)
 public extension UIView {
-    /// Add anchors from any side of the current view into the specified anchors and returns the newly added constraints.
-    @discardableResult
-    func anchor(
-        top: NSLayoutYAxisAnchor? = nil,
-        left: NSLayoutXAxisAnchor? = nil,
-        bottom: NSLayoutYAxisAnchor? = nil,
-        right: NSLayoutXAxisAnchor? = nil,
-        topConstant: CGFloat = 0,
-        leftConstant: CGFloat = 0,
-        bottomConstant: CGFloat = 0,
-        rightConstant: CGFloat = 0,
-        widthConstant: CGFloat = 0,
-        heightConstant: CGFloat = 0) -> [NSLayoutConstraint]
-    {
-        translatesAutoresizingMaskIntoConstraints = false
-
-        var anchors = [NSLayoutConstraint]()
-
-        if let top = top {
-            anchors.append(topAnchor.constraint(equalTo: top, constant: topConstant))
-        }
-
-        if let left = left {
-            anchors.append(leftAnchor.constraint(equalTo: left, constant: leftConstant))
-        }
-
-        if let bottom = bottom {
-            anchors.append(bottomAnchor.constraint(equalTo: bottom, constant: -bottomConstant))
-        }
-
-        if let right = right {
-            anchors.append(rightAnchor.constraint(equalTo: right, constant: -rightConstant))
-        }
-
-        if widthConstant > 0 {
-            anchors.append(widthAnchor.constraint(equalToConstant: widthConstant))
-        }
-
-        if heightConstant > 0 {
-            anchors.append(heightAnchor.constraint(equalToConstant: heightConstant))
-        }
-
-        anchors.forEach { $0.isActive = true }
-
-        return anchors
-    }
-
-    /// Anchor center X into current view's superview with a constant margin value.
     @discardableResult
     func anchorCenterXToSuperview(constant: CGFloat = 0) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
@@ -76,7 +30,6 @@ public extension UIView {
         return self
     }
 
-    /// Anchor center Y into current view's superview with a constant margin value.
     @discardableResult
     func anchorCenterYToSuperview(constant: CGFloat = 0) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
@@ -86,7 +39,6 @@ public extension UIView {
         return self
     }
 
-    /// Anchor center X and Y into current view's superview.
     @discardableResult
     func anchorCenterSuperview() -> Self {
         anchorCenterXToSuperview()
@@ -153,10 +105,39 @@ public extension UIView {
         heightAnchor.constraint(equalToConstant: constant).isActive = true
         return self
     }
+
+    @discardableResult
+    func centerXAnchor(attribute: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> Self {
+        centerXAnchor.constraint(equalTo: attribute, constant: constant).isActive = true
+        return self
+    }
+
+    @discardableResult
+    func centerYAnchor(attribute: NSLayoutYAxisAnchor, constant: CGFloat = 0.0) -> Self {
+        centerYAnchor.constraint(equalTo: attribute, constant: constant).isActive = true
+        return self
+    }
+}
+
+public extension UIView {
+    @available(iOS 11.0, *)
+    @discardableResult
+    func centerYAnchor(equalToSystemSpacingBelow attribute: NSLayoutYAxisAnchor, multiplier: CGFloat = 1.0) -> Self {
+        centerYAnchor.constraint(equalToSystemSpacingBelow: attribute, multiplier: multiplier).isActive = true
+        return self
+    }
+
+    @available(iOS 11.0, *)
+    @discardableResult
+    func centerXAnchor(equalToSystemSpacingAfter attribute: NSLayoutXAxisAnchor, multiplier: CGFloat = 1.0) -> Self {
+        centerXAnchor.constraint(equalToSystemSpacingAfter: attribute, multiplier: multiplier).isActive = true
+        return self
+    }
 }
 
 // MARK: - Constraints
 
+@available(iOS 9.0, *)
 public extension UIView {
     /// Search constraints until we find one for the given view
     func findConstraint(attribute: NSLayoutConstraint.Attribute, for view: UIView) -> NSLayoutConstraint? {
