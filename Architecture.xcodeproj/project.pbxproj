@@ -34,6 +34,7 @@
 		8C54171B297A52B800F9E84C /* UIButton+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54171A297A52B800F9E84C /* UIButton+Position.swift */; };
 		8C541720297A532200F9E84C /* Gradients+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54171E297A532200F9E84C /* Gradients+Layer.swift */; };
 		8C541721297A532200F9E84C /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54171F297A532200F9E84C /* Direction.swift */; };
+		8C541723297A5CB500F9E84C /* String+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C541722297A5CB500F9E84C /* String+Size.swift */; };
 		8C760DE428E4154E00A29F77 /* UIViewController+TopMostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C760DE328E4154E00A29F77 /* UIViewController+TopMostViewController.swift */; };
 		8C760DE728E4318B00A29F77 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C760DE528E4318B00A29F77 /* UIFontExtensions.swift */; };
 		8C760DE828E4318B00A29F77 /* UIBarButtonItemExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C760DE628E4318B00A29F77 /* UIBarButtonItemExtensions.swift */; };
@@ -140,6 +141,7 @@
 		8C54171A297A52B800F9E84C /* UIButton+Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Position.swift"; sourceTree = "<group>"; };
 		8C54171E297A532200F9E84C /* Gradients+Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gradients+Layer.swift"; sourceTree = "<group>"; };
 		8C54171F297A532200F9E84C /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		8C541722297A5CB500F9E84C /* String+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Size.swift"; sourceTree = "<group>"; };
 		8C760DE328E4154E00A29F77 /* UIViewController+TopMostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopMostViewController.swift"; sourceTree = "<group>"; };
 		8C760DE528E4318B00A29F77 /* UIFontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		8C760DE628E4318B00A29F77 /* UIBarButtonItemExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtensions.swift; sourceTree = "<group>"; };
@@ -742,6 +744,7 @@
 		8CEDA7DB28362A2C004BC3AC /* String */ = {
 			isa = PBXGroup;
 			children = (
+				8C541722297A5CB500F9E84C /* String+Size.swift */,
 				8CEDA7DC28362A2C004BC3AC /* String+Subscript.swift */,
 				8CEDA7DD28362A2C004BC3AC /* String+Transform.swift */,
 			);
@@ -1051,6 +1054,7 @@
 				8C760DE828E4318B00A29F77 /* UIBarButtonItemExtensions.swift in Sources */,
 				8CEDA7FA28362A2C004BC3AC /* UIViewController+Modal.swift in Sources */,
 				8C094B0A28DDB5C30041A3C0 /* DataExtensions.swift in Sources */,
+				8C541723297A5CB500F9E84C /* String+Size.swift in Sources */,
 				8CEDA7EB28362A2C004BC3AC /* IDCardValidator.swift in Sources */,
 				8C4086E126CE5C7800C26A55 /* BackWebviewController.swift in Sources */,
 				8C76855828BF4EC4004FF44E /* PlaceholderTextView.swift in Sources */,
