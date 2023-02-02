@@ -187,6 +187,16 @@ public extension UIView {
     var rightConstraint: NSLayoutConstraint? {
         findConstraint(attribute: .right, for: self)
     }
+    
+    /// First centerX constraint for this view.
+    var centerXConstraint: NSLayoutConstraint? {
+        findConstraint(attribute: .centerX, for: self)
+    }
+    
+    /// First centerY constraint for this view.
+    var centerYConstraint: NSLayoutConstraint? {
+        findConstraint(attribute: .centerY, for: self)
+    }
 }
 
 #endif
