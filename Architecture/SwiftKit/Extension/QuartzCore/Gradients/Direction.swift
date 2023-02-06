@@ -1,6 +1,6 @@
 //
 //  Direction.swift
-//  WanBox
+//  Architecture
 //
 //  Created by Jivan on 2022/12/27.
 //  Copyright © 2022 Jivan. All rights reserved.

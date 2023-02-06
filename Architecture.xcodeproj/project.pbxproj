@@ -21,6 +21,7 @@
 		8C381D4628D2CF9800FEE14B /* PlaceholderTextView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C381D4528D2CF9800FEE14B /* PlaceholderTextView+Chain.swift */; };
 		8C4007A02990A61800C51150 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40079F2990A61800C51150 /* Dictionary+Extension.swift */; };
 		8C4007A22990A62000C51150 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4007A12990A61F00C51150 /* Collection+Extension.swift */; };
+		8C4007A52990A69B00C51150 /* Dispatch+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4007A42990A69B00C51150 /* Dispatch+Extension.swift */; };
 		8C40861E26CD003300C26A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40861D26CD003300C26A55 /* AppDelegate.swift */; };
 		8C40862726CD003700C26A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C40862626CD003700C26A55 /* Assets.xcassets */; };
 		8C40862A26CD003700C26A55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C40862826CD003700C26A55 /* LaunchScreen.storyboard */; };
@@ -124,6 +125,7 @@
 		8C381D4528D2CF9800FEE14B /* PlaceholderTextView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaceholderTextView+Chain.swift"; sourceTree = "<group>"; };
 		8C40079F2990A61800C51150 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		8C4007A12990A61F00C51150 /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		8C4007A42990A69B00C51150 /* Dispatch+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dispatch+Extension.swift"; sourceTree = "<group>"; };
 		8C40861A26CD003300C26A55 /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C40861D26CD003300C26A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C40862626CD003700C26A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -317,6 +319,14 @@
 				8C40079F2990A61800C51150 /* Dictionary+Extension.swift */,
 			);
 			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		8C4007A32990A69B00C51150 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				8C4007A42990A69B00C51150 /* Dispatch+Extension.swift */,
+			);
+			path = Dispatch;
 			sourceTree = "<group>";
 		};
 		8C40861126CD003300C26A55 = {
@@ -525,6 +535,7 @@
 		8CEDA7A628362A2C004BC3AC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8C4007A32990A69B00C51150 /* Dispatch */,
 				8C381D8728E6C0B30068D1BA /* SwiftStdlib */,
 				8CEDA7A728362A2C004BC3AC /* CoreGraphics */,
 				8CEDA7AA28362A2C004BC3AC /* UIKit */,
@@ -555,7 +566,6 @@
 		8CEDA7AA28362A2C004BC3AC /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				8C54171D297A532200F9E84C /* Gradients */,
 				8C2B8142283B5D8F001D35C4 /* UIAlertController */,
 				8CEDA7B228362A2C004BC3AC /* UIApplication */,
 				8C760DF028E4328400A29F77 /* UIBarButtonItem */,
@@ -768,6 +778,7 @@
 		8CEDA7DE28362A2C004BC3AC /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
+				8C54171D297A532200F9E84C /* Gradients */,
 				8CEDA7DF28362A2C004BC3AC /* CALayer */,
 			);
 			path = QuartzCore;
@@ -1073,6 +1084,7 @@
 				8CEDA7EB28362A2C004BC3AC /* IDCardValidator.swift in Sources */,
 				8C4086E126CE5C7800C26A55 /* BackWebviewController.swift in Sources */,
 				8C76855828BF4EC4004FF44E /* PlaceholderTextView.swift in Sources */,
+				8C4007A52990A69B00C51150 /* Dispatch+Extension.swift in Sources */,
 				8CEDA7F928362A2C004BC3AC /* UIDevice+Idiom.swift in Sources */,
 				8CEDA7F828362A2C004BC3AC /* UIView+Chain.swift in Sources */,
 				8C40865926CD039A00C26A55 /* NavigationController.swift in Sources */,

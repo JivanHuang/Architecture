@@ -1,6 +1,6 @@
 //
 //  Dictionary+Extension.swift
-//  WanBox
+//  Architecture
 //
 //  Created by Jivan on 2023/1/6.
 //  Copyright © 2023 柒贰互娱. All rights reserved.
