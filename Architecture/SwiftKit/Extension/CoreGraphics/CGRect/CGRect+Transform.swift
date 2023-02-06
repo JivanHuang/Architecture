@@ -16,6 +16,17 @@ public extension CGRect {
     var y: CGFloat {
         origin.y
     }
+
+    var center: CGPoint {
+        CGPoint(x: midX, y: midY)
+    }
+}
+
+public extension CGRect {
+    init(center: CGPoint, size: CGSize) {
+        let origin = CGPoint(x: center.x - size.width / 2.0, y: center.y - size.height / 2.0)
+        self.init(origin: origin, size: size)
+    }
 }
 
 public extension CGRect {

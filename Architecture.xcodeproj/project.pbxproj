@@ -19,6 +19,8 @@
 		8C381D4128D2C96500FEE14B /* UIView+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C381D4028D2C96500FEE14B /* UIView+Container.swift */; };
 		8C381D4428D2CD8D00FEE14B /* UITextView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C381D4328D2CD8D00FEE14B /* UITextView+Chain.swift */; };
 		8C381D4628D2CF9800FEE14B /* PlaceholderTextView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C381D4528D2CF9800FEE14B /* PlaceholderTextView+Chain.swift */; };
+		8C4007A02990A61800C51150 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40079F2990A61800C51150 /* Dictionary+Extension.swift */; };
+		8C4007A22990A62000C51150 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4007A12990A61F00C51150 /* Collection+Extension.swift */; };
 		8C40861E26CD003300C26A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40861D26CD003300C26A55 /* AppDelegate.swift */; };
 		8C40862726CD003700C26A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C40862626CD003700C26A55 /* Assets.xcassets */; };
 		8C40862A26CD003700C26A55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C40862826CD003700C26A55 /* LaunchScreen.storyboard */; };
@@ -120,6 +122,8 @@
 		8C381D4028D2C96500FEE14B /* UIView+Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Container.swift"; sourceTree = "<group>"; };
 		8C381D4328D2CD8D00FEE14B /* UITextView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Chain.swift"; sourceTree = "<group>"; };
 		8C381D4528D2CF9800FEE14B /* PlaceholderTextView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaceholderTextView+Chain.swift"; sourceTree = "<group>"; };
+		8C40079F2990A61800C51150 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		8C4007A12990A61F00C51150 /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		8C40861A26CD003300C26A55 /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C40861D26CD003300C26A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C40862626CD003700C26A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -296,6 +300,7 @@
 		8C381D8728E6C0B30068D1BA /* SwiftStdlib */ = {
 			isa = PBXGroup;
 			children = (
+				8C40079E2990A61800C51150 /* Dictionary */,
 				8CEDA7DB28362A2C004BC3AC /* String */,
 				8CEDA7D528362A2C004BC3AC /* Int */,
 				8CEDA7D728362A2C004BC3AC /* Float */,
@@ -304,6 +309,14 @@
 				8CEDA7CA28362A2C004BC3AC /* Array */,
 			);
 			path = SwiftStdlib;
+			sourceTree = "<group>";
+		};
+		8C40079E2990A61800C51150 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				8C40079F2990A61800C51150 /* Dictionary+Extension.swift */,
+			);
+			path = Dictionary;
 			sourceTree = "<group>";
 		};
 		8C40861126CD003300C26A55 = {
@@ -687,6 +700,7 @@
 		8CEDA7C828362A2C004BC3AC /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				8C4007A12990A61F00C51150 /* Collection+Extension.swift */,
 				8CEDA7C928362A2C004BC3AC /* Collection+Async.swift */,
 			);
 			path = Collection;
@@ -1054,6 +1068,7 @@
 				8C760DE828E4318B00A29F77 /* UIBarButtonItemExtensions.swift in Sources */,
 				8CEDA7FA28362A2C004BC3AC /* UIViewController+Modal.swift in Sources */,
 				8C094B0A28DDB5C30041A3C0 /* DataExtensions.swift in Sources */,
+				8C4007A02990A61800C51150 /* Dictionary+Extension.swift in Sources */,
 				8C541723297A5CB500F9E84C /* String+Size.swift in Sources */,
 				8CEDA7EB28362A2C004BC3AC /* IDCardValidator.swift in Sources */,
 				8C4086E126CE5C7800C26A55 /* BackWebviewController.swift in Sources */,
@@ -1071,6 +1086,7 @@
 				8C760DEA28E4319700A29F77 /* UISearchBarExtensions.swift in Sources */,
 				8CEDA80728362A2C004BC3AC /* Double+Transform.swift in Sources */,
 				8C094B0328DDABAD0041A3C0 /* UISegmentedControlExtension.swift in Sources */,
+				8C4007A22990A62000C51150 /* Collection+Extension.swift in Sources */,
 				8C2B813B283B3155001D35C4 /* MD5StringEncoder.swift in Sources */,
 				8CEDA80328362A2C004BC3AC /* URL+Query.swift in Sources */,
 				8C2B8144283B5DBA001D35C4 /*  UIAlertController+Extension.swift in Sources */,
