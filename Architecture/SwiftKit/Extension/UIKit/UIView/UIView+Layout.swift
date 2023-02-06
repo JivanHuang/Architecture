@@ -89,6 +89,18 @@ public extension UIView {
     }
 
     @discardableResult
+    func widthAnchor(greaterThanOrEqualTo attribute: NSLayoutDimension, m multiplier: CGFloat = 1.0, constant: CGFloat = 0.0) -> Self {
+        widthAnchor.constraint(greaterThanOrEqualTo: attribute, multiplier: multiplier, constant: constant).isActive = true
+        return self
+    }
+
+    @discardableResult
+    func widthAnchor(lessThanOrEqualTo attribute: NSLayoutDimension, m multiplier: CGFloat = 1.0, constant: CGFloat = 0.0) -> Self {
+        widthAnchor.constraint(lessThanOrEqualTo: attribute, multiplier: multiplier, constant: constant).isActive = true
+        return self
+    }
+
+    @discardableResult
     func widthAnchor(equalToConstant constant: CGFloat = 0.0) -> Self {
         widthAnchor.constraint(equalToConstant: constant).isActive = true
         return self
@@ -97,6 +109,18 @@ public extension UIView {
     @discardableResult
     func heightAnchor(attribute: NSLayoutDimension, m multiplier: CGFloat = 1.0, constant: CGFloat = 0.0) -> Self {
         heightAnchor.constraint(equalTo: attribute, multiplier: multiplier, constant: constant).isActive = true
+        return self
+    }
+
+    @discardableResult
+    func heightAnchor(greaterThanOrEqualTo attribute: NSLayoutDimension, m multiplier: CGFloat = 1.0, constant: CGFloat = 0.0) -> Self {
+        heightAnchor.constraint(greaterThanOrEqualTo: attribute, multiplier: multiplier, constant: constant).isActive = true
+        return self
+    }
+
+    @discardableResult
+    func heightAnchor(lessThanOrEqualTo attribute: NSLayoutDimension, m multiplier: CGFloat = 1.0, constant: CGFloat = 0.0) -> Self {
+        heightAnchor.constraint(lessThanOrEqualTo: attribute, multiplier: multiplier, constant: constant).isActive = true
         return self
     }
 
@@ -187,12 +211,12 @@ public extension UIView {
     var rightConstraint: NSLayoutConstraint? {
         findConstraint(attribute: .right, for: self)
     }
-    
+
     /// First centerX constraint for this view.
     var centerXConstraint: NSLayoutConstraint? {
         findConstraint(attribute: .centerX, for: self)
     }
-    
+
     /// First centerY constraint for this view.
     var centerYConstraint: NSLayoutConstraint? {
         findConstraint(attribute: .centerY, for: self)
